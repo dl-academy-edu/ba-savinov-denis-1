@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7ae5092e20.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Toys</title>
+</head>
+
+<body>
+    <header class="header container">
+        <a href="/"><img src="images/DLK-logo.svg" alt="logo" class="header-logo"></a>
+        <nav class="main-menu" aria-label="Main menu">
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+        <form class="search">
+            <input type="text" placeholder="Search here...">
+            <button type="button" class="search-btn"></button>
+        </form>
+        <a href="contact.html" class="contact-link">Contact Us</a>
+    </header>
+    <main>
+        <section class="main-title container">
+            <h1>Toy for kids</h1>
+        </section>
+        <section class="breadcrumbs container">
+            <h2 class="visually-hidden">Breadcrumbs</h2>
+            <ul class="breadcrumbs-list">
+                <li><a class="home-link" href="/">Home</a></li>
+                <li><a class="catalog-link" href="catalog.html">Catalog</a></li>
+                <li class="breadcrumbs-item-active">Toys</li>
+            </ul>
+        </section>
+        <section class="filter-block">
+            <div class="container">
+                <div class="filter-cost">
+                    <h3>Cost</h3>
+                </div>
+                <div class="filter-color">
+                    <h3>Color</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="color-item-checkbox" id="one-color">
+                            <label for="one-color">Black</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="color-item-checkbox" id="two-color">
+                            <label for="two-color">Blue</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="color-item-checkbox" id="three-color">
+                            <label for="three-color">Green</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="color-item-checkbox" id="four-color">
+                            <label for="four-color">White</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter-delivery">
+                    <h3>Delivery</h3>
+                    <ul>
+                        <li>
+                            <input type="radio" name="delivery-item" id="delivery-item-one">
+                            <label for="delivery-item-one">Free shipping</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="delivery-item" id="delivery-item-two">
+                            <label for="delivery-item-two">Fast shipping</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter-amount">
+                    <h3>Amount</h3>
+                    <ul>
+                        <li>
+                            <button class="amount-one-btn amount-btn-active">0-5</button>
+                        </li>
+                        <li>
+                            <button class="amount-two-btn">10-20</button>
+                        </li>
+                        <li>
+                            <button class="amount-three-btn">20-50</button>
+                        </li>
+                    </ul>
+                </div>
+                <button class="filter-apply-btn">Apply</button>
+            </div>
+        </section>
+        <section class="toys-list container">
+            <h2 class="visually-hidden">Toys list</h2>
+            <div class="toys-item-block">
+                <img src="" alt="">
+                <h3 class="toy-title">SHARKY BEAN BAG CHAIR COVER</h3>
+                <span class="price-toy">$60.00 USD</span>
+            </div>
+            <div class="toys-item-block">
+                <img src="" alt="">
+                <h3>BRASS DECO FRAMES</h3>
+                <span class="price-toy">$66.00 USD</span>
+            </div>
+            <div class="toys-item-block">
+                <img src="" alt="">
+                <h3>CIBO FULL APRON</h3>
+                <span class="price-toy">$60.00 USD</span>
+            </div>
+            <div class="toys-item-block">
+                <img src="" alt="">
+                <h3>GATCHA GATCHA GUMBALL MACHINE</h3>
+                <span class="price-toy">$56.00 USD</span>
+            </div>
+            <div class="toys-item-block">
+                <img src="" alt="">
+                <h3>CHRISTMAS ADVENT SCENTED CANDLE</h3>
+                <span class="price-toy">$29.00 USD</span>
+            </div>
+            <div class="toys-item-block">
+                <img src="" alt="">
+                <h3>TANGLE SPINNING TEA LIGHT</h3>
+                <span class="price-toy">$56.00 USD</span>
+            </div>
+        </section>
+        <section class="toys-control">
+            <h2 class="visually-hidden">Toys control</h2>
+            <button type="button" class="prev-toys-page"></button>
+            <ul class="toys-page-list">
+                <li><button type="button" class="toys-page-item page-item-active">1</button></li>
+                <li><button type="button" class="toys-page-item">2</button></li>
+                <li><button type="button" class="toys-page-item">3</button></li>
+                <li><button type="button" class="toys-page-item">4</button></li>
+            </ul>
+            <button type="button" class="next-toys-page"></button>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="foother-lists">
+                <div class="navigation-list">
+                    <h4>Navigation</h4>
+                    <ul class="navigation-menu">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Design Services</a></li>
+                        <li><a href="#">Featured On</a></li>
+                        <li><a href="#">2018 Holiday Catalog</a></li>
+                        <li><a href="#">Shop By Designer</a></li>
+                    </ul>
+                </div>
+                <div class="customer-info">
+                    <h4>Customer Information</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Sale Exclusions</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Search</a></li>
+                    </ul>
+                </div>
+                <div class="connect">
+                    <h4>Connect</h4>
+                    <form class="subscribe-form">
+                        <input class="input-email" type="email" name="email" placeholder="Email">
+                        <button class="submit-btn button" type="submit"></button>
+                    </form>
+                    <div class="socials">
+                        <ul>
+                            <li>
+                                <a class="facebook fab fa-facebook-f" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="twitter fab fa-twitter" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="pinterest fab fa-pinterest" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="instagram fab fa-instagram" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="foother-lists">
+                <div class="company-rating">
+                    <div class="rating-label">Company Rating</div>
+                    <div class="rating__item far fa-star">1</div>
+                    <div class="rating__item far fa-star">2</div>
+                    <div class="rating__item far fa-star">3</div>
+                    <div class="rating__item far fa-star">4</div>
+                    <div class="rating__item far fa-star">5</div>
+                </div>
+                <div class="copyright">Copyright © 2018 Dlk • Design Life Kids</div>
+                <div class="designer-info">Web Design — Direct Line Development</div>
+            </div>
+        </div>
+    </footer>
