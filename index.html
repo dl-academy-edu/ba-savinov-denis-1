@@ -9,22 +9,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <title>DLK</title>
 </head>
 
 <body>
     <header class="header container">
-        <img src="images/DLK-logo.svg" alt="logo" class="header-logo">
+        <a href="#"><img src="images/DLK-logo.svg" alt="logo" class="header-logo"></a>
         <nav class="main-menu" aria-label="Main menu">
-            <ul>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="catalog.html">Catalog</a></li>
-                <li><a href="#">About Us</a></li>
+            <ul class="header-list">
+                <li class="header-item"><a href="blog.html">Blog</a></li>
+                <li class="header-item"><a href="catalog.html">Catalog</a></li>
+                <li class="header-item"><a href="#">About Us</a></li>
             </ul>
         </nav>
-        <form class="search">
-            <input type="text" placeholder="Search here...">
-            <button type="button" class="search-btn"></button>
+        <form class="search-form" action="" method="post">
+            <input class="search-text" type="search" placeholder="Search here...">
+            <button class="search-btn" type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.3651 3.26001C10.9451 3.26001 8.16509 6.08001 8.16509 9.52001C8.16509 10.98 8.6651 12.3 9.4851 13.38L3.6051 19.32C3.2651 19.68 3.2651 20.24 3.6051 20.58C3.7851 20.76 4.0051 20.84 4.2251 20.84C4.4651 20.84 4.6851 20.76 4.8651 20.58L10.7451 14.62C11.7651 15.36 13.0051 15.78 14.3451 15.78C17.7651 15.78 20.5451 12.96 20.5451 9.52001C20.5651 6.06001 17.7851 3.26001 14.3651 3.26001ZM14.3651 14.2C11.8251 14.2 9.76509 12.1 9.76509 9.52001C9.76509 6.94001 11.8251 4.84001 14.3651 4.84001C16.9051 4.84001 18.9651 6.94001 18.9651 9.52001C18.9651 12.1 16.9051 14.2 14.3651 14.2ZM17.4651 9.60001C17.4251 9.94001 17.1251 10.2 16.7851 10.2C16.7451 10.2 16.7251 10.2 16.6851 10.2C16.3051 10.14 16.0451 9.80001 16.0851 9.42001C16.2251 8.38001 15.0651 7.84001 15.0051 7.82001C14.6651 7.66001 14.5051 7.24001 14.6651 6.90001C14.8251 6.56001 15.2251 6.40001 15.5851 6.54001C15.6651 6.56001 17.7451 7.52001 17.4651 9.60001ZM16.0051 11.12C16.1451 11.26 16.2451 11.48 16.2451 11.68C16.2451 11.9 16.1651 12.1 16.0051 12.24C15.8651 12.38 15.6451 12.48 15.4451 12.48C15.2451 12.48 15.0251 12.4 14.8851 12.24C14.7451 12.1 14.6451 11.88 14.6451 11.68C14.6451 11.48 14.7251 11.26 14.8851 11.12C15.0251 10.98 15.2451 10.88 15.4451 10.88C15.6451 10.88 15.8451 10.96 16.0051 11.12Z" fill="#1E0606"/>
+                </svg>
+            </button>
         </form>
         <a href="contact.html" class="contact-link">Contact Us</a>
     </header>
@@ -47,7 +52,7 @@
                     <p>Designed in Slovenia</p>
                     <a href="#" class="slider-btn button">EXPLORE NOW</a>
                 </div>
-                <img src="images/monster.png" alt="" class="slider-img">
+                <img src="images/monster.png" alt="" class="slider-img" height="461" width="635">
             </div>
             <div class="slider-foother">
                 <p>Free (continental) USA shipping on all orders of $100 USD or more!</p>
@@ -79,7 +84,7 @@
             </div>
         </section>
         <section class="delivery">
-            <img src="images/woman.jpg" alt="delivery-img">
+            <img src="images/woman.jpg" alt="delivery-img" height="559" width="480">
             <div class="delivery-content">
                 <h2>Delivery</h2>
                 <ul class="delivery-menu">
@@ -101,10 +106,10 @@
         <section class="company">
             <h2 class="visually-hidden">Company</h2>
             <ul class="company-list">
-                <li class="company-one"><img src="images/company/mail-group.png" alt=""></li>
-                <li class="company-two"><img src="images/company/apple.png" alt=""></li>
-                <li class="company-three"><img src="images/company/eltex.png" alt=""></li>
-                <li class="company-four"><img src="images/company/owox.png" alt=""></li>
+                <li class="company-one"><img src="images/company/mail-group.png" alt="" height="60" width="193"></li>
+                <li class="company-two"><img src="images/company/apple.png" alt="" height="61" width="179"></li>
+                <li class="company-three"><img src="images/company/eltex.png" alt="" height="46" width="216"></li>
+                <li class="company-four"><img src="images/company/owox.png" alt="" height="40" width="211"></li>
             </ul>
         </section>
         <section class="dlk-info">
