@@ -29,7 +29,7 @@ a {
 /* HEADER */
 
 .header {
-    padding: 50px 0 0 40px;
+    padding-top: 50px;
     display: flex;
     align-items: center;
 }
@@ -38,6 +38,7 @@ a {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 19px;
+    white-space: nowrap;
 }
 
 .header a:hover {
@@ -48,22 +49,28 @@ a {
     opacity: 0.2;
 }
 
+.header-logo {
+    display: block;
+}
+
 .main-menu {
-    margin: 0 auto 0 10px;
+    margin: 0 auto 0 20px;
 }
 
 .header-list {
     display: flex;
     align-items: center;
     list-style-type: none;
+    flex-wrap: wrap;
 }
 
 .header-item {
-    margin-right: 15px;
+    margin-right: 21px;
 }
 
 .contact-link {
     font-weight: 700;
+    letter-spacing: 0.50px;
 }
 
 
@@ -72,8 +79,8 @@ a {
 .search-form {
     position: relative;
     width: 300px;
-    margin-right: 20px;
-    height: 42px;
+    margin-right: 9px;
+    height: 38px;
 }
 
 .search-text {
