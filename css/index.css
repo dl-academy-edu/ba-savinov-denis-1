@@ -80,13 +80,13 @@ a {
     position: relative;
     width: 300px;
     margin-right: 9px;
-    height: 38px;
+    height: 24px;
 }
 
 .search-text {
-    height: 42px;
+    height: 24px;
     width: 0;
-    padding: 0 42px 0 15px;
+    padding: 0 15px 0;
     border: none;
     border-bottom: 2px solid transparent;
     outline: none;
@@ -108,15 +108,12 @@ a {
     border-bottom: 2px solid #000000;
 }
 
-.search-btn {
-    background-color: #fff;
-    border: none;
-    height: 42px;
-    width: 42px;
+.search-img {
+    display: block;
     position: absolute;
+    margin: auto;
     top: 0;
-    right: 0;
-    cursor: pointer;
+    right: 9px;
 }
 
 .search-form:hover {
