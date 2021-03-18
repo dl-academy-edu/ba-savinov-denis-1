@@ -8,15 +8,17 @@
     <script src="https://kit.fontawesome.com/7ae5092e20.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <title>Catalog</title>
 </head>
 
 <body>
     <header class="header container">
-        <img src="img.png" alt="logo" class="header-logo">
+        <a href="/"><img src="images/DLK-logo.svg" alt="logo" class="header-logo"></a>
         <nav class="main-menu" aria-label="Main menu">
             <ul>
-                <li><a href="#">Blog</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="#">Catalog</a></li>
                 <li><a href="#">About Us</a></li>
             </ul>
@@ -25,15 +27,15 @@
             <input type="text" placeholder="Search here...">
             <button type="button" class="search-btn"></button>
         </form>
-        <a href="#" class="contact-link">Contact Us</a>
+        <a href="contact.html" class="contact-link">Contact Us</a>
     </header>
     <main class="container">
         <h1>Category Products</h1>
         <section class="breadcrumbs">
             <h2 class="visually-hidden">Breadcrumbs</h2>
             <ul class="breadcrumbs-list">
-                <li><a class="home-link" href="index.html">Home</a></li>
-                <li class="active">Catalog</li>
+                <li><a class="breadcrumbs-link" href="/">Home</a></li>
+                <li class="breadcrumbs-item-active">Catalog</li>
             </ul>
         </section>
         <section class="category">
