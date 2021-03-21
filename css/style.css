@@ -11,6 +11,17 @@ a {
     color: #1E0606;
 }
 
+h1,
+h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #1E0606;
+}
+
 .visually-hidden {
     height: 0;
     font-size: 0;
@@ -107,10 +118,6 @@ a {
     top: 0;
     right: 0;
     z-index: 2;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
 }
 
 .search-text:focus {
@@ -137,8 +144,6 @@ a {
 
 
 /* SLIDER */
-
-.slider {}
 
 .slider-body {
     display: flex;
@@ -195,16 +200,6 @@ a {
     padding: 93px 0 0 45px;
 }
 
-.slider-title {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 110%;
-    color: #1E0606;
-    text-transform: uppercase;
-}
-
 .slider-text p {
     font-family: Crimson Text;
     font-style: italic;
@@ -222,7 +217,7 @@ a {
 }
 
 .slider-text-item {
-    margin: 0 0 18px 0;
+    margin: 0 0 19px 0;
 }
 
 .slider-img {
@@ -246,3 +241,144 @@ a {
     line-height: 16px;
     text-transform: uppercase;
 }
+
+
+/* CATEGORY */
+
+.category {
+    padding-top: 33px;
+}
+
+.category-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #1E0606;
+}
+
+.category-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.category-item {
+    display: flex;
+    width: 280px;
+    height: 270px;
+    padding: 0 44px;
+    box-sizing: border-box;
+}
+
+.category-item h3 {
+    margin: auto;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+.category-one {
+    background: url(/images/category-kids.png) no-repeat center;
+    background-blend-mode: multiply;
+    background-color: #DBE4DB;
+}
+
+.category-two {
+    background: url(/images/category-holiday.png) no-repeat center;
+    background-blend-mode: multiply;
+    background-color: #EADDD3;
+}
+
+.category-three {
+    background: url(/images/category-toys.png) no-repeat center;
+    background-blend-mode: multiply;
+    background-color: #F8F2DA;
+}
+
+.category-four {
+    background: url(/images/category-accessories.png) no-repeat center;
+    background-blend-mode: multiply;
+    background-color: #D5D4E1;
+}
+
+.category-control {
+    display: flex;
+    align-items: center;
+    padding-top: 14px;
+}
+
+.prev-category,
+.next-category {
+    border: none;
+    width: 37px;
+    height: 37px;
+    background: rgba(112, 187, 220, 0.2);
+    cursor: pointer;
+}
+
+.prev-category {
+    margin-right: 6px;
+}
+
+.prev-category::after {
+    content: ' ';
+    display: block;
+    background-image: url('/images/prev-arrow.svg');
+    background-size: 24px 29px;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 28px;
+}
+
+.next-category {
+    margin-right: 20px;
+}
+
+.next-category::after {
+    content: ' ';
+    display: block;
+    background-image: url('/images/next-arrow.svg');
+    background-size: 24px 29px;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 28px;
+}
+
+.category-description {
+    max-width: 50%;
+    color: #1E0606;
+}
+
+
+/* Delivery */
+
+.delivery {
+    padding-top: 74px;
+    display: flex;
+}
+
+.delivery-crop-img {
+    max-width: 480px;
+    width: 100%;
+    height: 559px;
+    overflow: hidden;
+}
+
+.delivery-crop-img img {
+    margin: -1px 0 0px -17px;
+}
+
+.delivery-content {
+    padding-left: 120px;
+    width: 50%;
+}
+
+.delivery-title {}
