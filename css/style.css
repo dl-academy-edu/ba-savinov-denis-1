@@ -4,6 +4,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+    color: #1E0606;
 }
 
 a {
@@ -51,7 +52,7 @@ h2 {
 /* HEADER */
 
 .header {
-    padding: 50px 0 129px;
+    padding: 48px 0 129px;
     display: flex;
     align-items: center;
 }
@@ -197,7 +198,7 @@ h2 {
 
 .slider-text {
     width: auto;
-    padding: 93px 0 0 45px;
+    padding: 90px 0 0 46px;
 }
 
 .slider-text p {
@@ -216,8 +217,12 @@ h2 {
     margin-bottom: 50px;
 }
 
+.slider-title {
+    letter-spacing: 1.1px;
+}
+
 .slider-text-item {
-    margin: 0 0 19px 0;
+    margin: 0 0 18px 0;
 }
 
 .slider-img {
@@ -246,7 +251,7 @@ h2 {
 /* CATEGORY */
 
 .category {
-    padding-top: 33px;
+    padding-top: 32px;
 }
 
 .category-title {
@@ -334,7 +339,7 @@ h2 {
     background-image: url('/images/prev-arrow.svg');
     background-size: 24px 29px;
     background-repeat: no-repeat;
-    height: 30px;
+    height: 32px;
     width: 28px;
 }
 
@@ -348,7 +353,7 @@ h2 {
     background-image: url('/images/next-arrow.svg');
     background-size: 24px 29px;
     background-repeat: no-repeat;
-    height: 30px;
+    height: 32px;
     width: 28px;
 }
 
@@ -377,8 +382,157 @@ h2 {
 }
 
 .delivery-content {
-    padding-left: 120px;
-    width: 50%;
+    padding-left: 121px;
+    width: 100%;
 }
 
-.delivery-title {}
+.delivery-content p {
+    margin: 15px 0 0 0;
+    max-width: 83%;
+}
+
+.delivery-title {
+    margin: 30px 0 6px;
+}
+
+.delivery-menu {
+    margin: 0 0 31px 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: Crimson Text;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 32px;
+}
+
+.delivery-menu-item {
+    margin: 21px 0;
+}
+
+.delivery-menu-active {
+    font-weight: bold;
+    position: relative;
+}
+
+.delivery-menu-active::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -15px;
+    right: 315px;
+    width: 326px;
+    height: 55px;
+    z-index: -1;
+    background: rgba(112, 187, 220, 0.2);
+}
+
+.delivery-learn-btn {
+    max-width: 149px;
+    width: 100%;
+    margin-top: 26px;
+}
+
+
+/* Company */
+
+.company {
+    padding: 90px 0 86px 0;
+}
+
+.company-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* DLK info */
+
+.dlk-info {
+    display: flex;
+}
+
+.dlk-about,
+.dlk-contacts {
+    width: 41%;
+    padding: 0 30px;
+}
+
+.dlk-about {
+    margin-right: 57px;
+    position: relative;
+}
+
+.dlk-about::after {
+    content: '';
+    position: absolute;
+    top: 23px;
+    left: 0px;
+    max-width: 543px;
+    width: 100%;
+    max-height: 236px;
+    height: 100%;
+    background-color: #E1F0F7;
+    z-index: -1;
+}
+
+.dlk-about h3 {
+    margin: 11px 0 0 0;
+    font-family: Crimson Text;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 32px;
+}
+
+.dlk-about p {
+    margin: 10px 0 0 0;
+}
+
+.dlk-info-titles {
+    margin: 0;
+}
+
+.buynow-btn {
+    margin-top: 20px;
+    max-width: 123px;
+}
+
+.dlk-contacts {
+    position: relative;
+}
+
+.dlk-contacts::after {
+    content: '';
+    position: absolute;
+    top: 23px;
+    left: 0px;
+    max-width: 543px;
+    width: 100%;
+    max-height: 209px;
+    height: 100%;
+    background-color: #E1F0F7;
+    z-index: -1;
+}
+
+.dlk-contacts p {
+    margin: 19px 0 0 0;
+}
+
+.map {
+    margin-top: 20px;
+    width: 483px;
+    height: 196px;
+    border: 0;
+}
+
+
+/* Modal window */
+
+.modal-window {
+    display: none;
+}
