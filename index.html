@@ -58,7 +58,7 @@
                 </div>
                 <img class="slider-img" src="images/monster.png" alt="" height="489" width="636">
             </div>
-            <div class="slider-foother">
+            <div class="slider-footer">
                 <p>Free (continental) USA shipping on all orders of $100 USD or more!</p>
             </div>
         </section>
@@ -132,10 +132,10 @@
     </main>
     <footer>
         <div class="container">
-            <div class="foother-lists">
+            <div class="footer-top-content footer-lists">
                 <div class="navigation-list">
-                    <h4>Navigation</h4>
-                    <ul class="navigation-menu">
+                    <h4 class="footer-titles">Navigation</h4>
+                    <ul class="footer-navigation-menu">
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Design Services</a></li>
@@ -144,9 +144,9 @@
                         <li><a href="#">Shop By Designer</a></li>
                     </ul>
                 </div>
-                <div class="customer-info">
-                    <h4>Customer Information</h4>
-                    <ul>
+                <div class="footer-customer-info">
+                    <h4 class="footer-titles">Customer Information</h4>
+                    <ul class="customer-menu">
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">Sale Exclusions</a></li>
                         <li><a href="#">Shipping & Returns</a></li>
@@ -156,40 +156,47 @@
                     </ul>
                 </div>
                 <div class="connect">
-                    <h4>Connect</h4>
+                    <h4 class="footer-titles">Connect</h4>
                     <form class="subscribe-form">
                         <input class="input-email" type="email" name="email" placeholder="Email">
-                        <button class="submit-btn button" type="submit"></button>
+                        <button class="subscribe-btn button" type="submit">Join</button>
                     </form>
                     <div class="socials">
-                        <ul>
+                        <ul class="socials-list">
                             <li>
-                                <a class="facebook fab fa-facebook-f" href="#"></a>
+                                <a class="socials-link facebook fab fa-facebook-f" href="#"></a>
                             </li>
                             <li>
-                                <a class="twitter fab fa-twitter" href="#"></a>
+                                <a class="socials-link twitter fab fa-twitter" href="#"></a>
                             </li>
                             <li>
-                                <a class="pinterest fab fa-pinterest" href="#"></a>
+                                <a class="socials-link pinterest fab fa-pinterest" href="#"></a>
                             </li>
                             <li>
-                                <a class="instagram fab fa-instagram" href="#"></a>
+                                <a class="socials-link instagram fab fa-instagram" href="#"></a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="foother-lists">
+            <div class="footer-bottom-content footer-lists">
                 <div class="company-rating">
-                    <div class="rating-label">Company Rating</div>
-                    <div class="rating__item far fa-star">1</div>
-                    <div class="rating__item far fa-star">2</div>
-                    <div class="rating__item far fa-star">3</div>
-                    <div class="rating__item far fa-star">4</div>
-                    <div class="rating__item far fa-star">5</div>
+                    <div class="rating-list">
+                        <input class="star-rating-input" type="radio" id="star-rating-5" name="star" value="5">
+                        <label class="rating-item fas fa-star hov_star" for="star-rating-5"></label>
+                        <input class="star-rating-input" type="radio" id="star-rating-4" name="star" value="4">
+                        <label class="rating-item fas fa-star hov_star" for="star-rating-4"></label>
+                        <input class="star-rating-input" type="radio" id="star-rating-3" name="star" value="3">
+                        <label class="rating-item fas fa-star hov_star" for="star-rating-3"></label>
+                        <input class="star-rating-input" type="radio" id="star-rating-2" name="star" value="2">
+                        <label class="rating-item fas fa-star hov_star" for="star-rating-2"></label>
+                        <input class="star-rating-input" type="radio" id="star-rating-1" name="star" value="1">
+                        <label class="rating-item fas fa-star hov_star" for="star-rating-1" c></label>
+                        <span class="rating-label">Company Rating</span>
+                    </div>
                 </div>
-                <div class="copyright">Copyright © 2018 Dlk • Design Life Kids</div>
-                <div class="designer-info">Web Design — Direct Line Development</div>
+                <span class="copyright">Copyright © 2018 Dlk • Design Life Kids</span>
+                <a class="designer-link" href="#">Web Design — Direct Line Development</a>
             </div>
         </div>
     </footer>
