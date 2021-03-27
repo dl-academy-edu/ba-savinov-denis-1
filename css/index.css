@@ -1,0 +1,406 @@
+/* SLIDER */
+
+.slider-body {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+    background-color: #EEE4DB;
+}
+
+.slider-control {
+    margin-top: 18px;
+    margin-left: 28px;
+}
+
+.slider-toggle ul {
+    list-style-type: none;
+    margin: 10px 0 50px 3px;
+    padding: 0;
+    line-height: 0;
+}
+
+.slider-counter {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 73px;
+    color: rgba(30, 6, 6, 0.05);
+}
+
+.slider-toggle-item {
+    margin-bottom: 11px;
+}
+
+.slider-toggle-btn {
+    width: 31px;
+    height: 3px;
+    vertical-align: middle;
+    background: #D6CAC2;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slider-toggle-active {
+    background: rgba(30, 6, 6, 0.6);
+}
+
+.slider-toggle-btn:hover {
+    background: rgba(30, 6, 6, 0.6);
+}
+
+.slider-text {
+    width: auto;
+    padding: 90px 0 0 46px;
+}
+
+.slider-text p {
+    font-family: Crimson Text;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1E0606;
+}
+
+.slider-text-btn {
+    max-width: 161px;
+    width: 100%;
+    letter-spacing: 0.5px;
+    margin-bottom: 50px;
+    border: none;
+}
+
+.slider-text-btn:hover {
+    background: #C29974;
+}
+
+.slider-text-btn:active {
+    background: #CFAF91;
+}
+
+.slider-text-btn:disabled {
+    background: #C1C1C1;
+    color: #E1E1E1;
+}
+
+.slider-title {
+    letter-spacing: 1.1px;
+}
+
+.slider-text-item {
+    margin: 0 0 18px 0;
+}
+
+.slider-img {
+    display: block;
+    margin-top: -89px;
+}
+
+.slider-footer {
+    padding: 11px 0;
+    background-color: #C29974;
+    position: relative;
+    bottom: 27px;
+    text-align: center;
+}
+
+.slider-footer p {
+    margin: 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+
+/* CATEGORY */
+
+.category {
+    padding-top: 32px;
+}
+
+.category-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #1E0606;
+}
+
+.category-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.category-item {
+    display: flex;
+    width: 280px;
+    height: 270px;
+    padding: 0 44px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.category-item h3 {
+    margin: auto;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+.category-item h3:hover,
+.category-item h3:active {
+    text-decoration-line: underline;
+}
+
+.category-one {
+    background: url(/images/category-kids.png) no-repeat center;
+    background-blend-mode: multiply;
+    background-color: #DBE4DB;
+}
+
+.category-two {
+    background: url(/images/category-holiday.png) no-repeat center;
+    background-blend-mode: multiply;
+    background-color: #EADDD3;
+}
+
+.category-three {
+    background: url(/images/category-toys.png) no-repeat center;
+    background-blend-mode: multiply;
+    background-color: #F8F2DA;
+}
+
+.category-four {
+    background: url(/images/category-accessories.png) no-repeat center;
+    background-blend-mode: multiply;
+    background-color: #D5D4E1;
+}
+
+.category-control {
+    display: flex;
+    align-items: center;
+    padding-top: 14px;
+}
+
+.prev-category,
+.next-category {
+    border: none;
+    width: 37px;
+    height: 37px;
+    background: rgba(112, 187, 220, 0.2);
+    cursor: pointer;
+}
+
+.prev-category {
+    margin-right: 6px;
+}
+
+.prev-category::after {
+    content: ' ';
+    display: block;
+    background-image: url('/images/prev-arrow.svg');
+    background-size: 24px 29px;
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 28px;
+}
+
+.next-category {
+    margin-right: 20px;
+}
+
+.next-category::after {
+    content: ' ';
+    display: block;
+    background-image: url('/images/next-arrow.svg');
+    background-size: 24px 29px;
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 28px;
+}
+
+.category-description {
+    max-width: 50%;
+    color: #1E0606;
+}
+
+
+/* Delivery */
+
+.delivery {
+    padding-top: 74px;
+    display: flex;
+}
+
+.delivery-crop-img {
+    max-width: 480px;
+    width: 100%;
+    height: 559px;
+    overflow: hidden;
+}
+
+.delivery-crop-img img {
+    margin: -1px 0 0px -17px;
+}
+
+.delivery-content {
+    padding-left: 121px;
+    width: 100%;
+}
+
+.delivery-content p {
+    margin: 15px 0 0 0;
+    max-width: 83%;
+}
+
+.delivery-title {
+    margin: 30px 0 6px;
+}
+
+.delivery-menu {
+    margin: 0 0 31px 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: Crimson Text;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 32px;
+}
+
+.delivery-menu-item {
+    margin: 21px 0;
+}
+
+.delivery-menu-active {
+    font-weight: bold;
+    position: relative;
+}
+
+.delivery-menu-active::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -15px;
+    right: 315px;
+    width: 326px;
+    height: 55px;
+    z-index: -1;
+    background: rgba(112, 187, 220, 0.2);
+}
+
+.delivery-learn-btn {
+    max-width: 149px;
+    width: 100%;
+    margin-top: 26px;
+}
+
+
+/* Company */
+
+.company {
+    padding: 90px 0 86px 0;
+}
+
+.company-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* DLK info */
+
+.dlk-info {
+    display: flex;
+    padding-bottom: 55px;
+}
+
+.dlk-about,
+.dlk-contacts {
+    width: 41%;
+    padding: 0 30px;
+}
+
+.dlk-about {
+    margin-right: 57px;
+    position: relative;
+}
+
+.dlk-about::after {
+    content: '';
+    position: absolute;
+    top: 23px;
+    left: 0px;
+    max-width: 543px;
+    width: 100%;
+    max-height: 236px;
+    height: 100%;
+    background-color: #E1F0F7;
+    z-index: -1;
+}
+
+.dlk-about h3 {
+    margin: 11px 0 0 0;
+    font-family: Crimson Text;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 32px;
+}
+
+.dlk-about p {
+    margin: 10px 0 0 0;
+}
+
+.dlk-info-titles {
+    margin: 0;
+}
+
+.buynow-btn {
+    margin-top: 20px;
+    max-width: 123px;
+}
+
+.dlk-contacts {
+    position: relative;
+}
+
+.dlk-contacts::after {
+    content: '';
+    position: absolute;
+    top: 23px;
+    left: 0px;
+    max-width: 543px;
+    width: 100%;
+    max-height: 209px;
+    height: 100%;
+    background-color: #E1F0F7;
+    z-index: -1;
+}
+
+.dlk-contacts p {
+    margin: 19px 0 0 0;
+}
+
+.map {
+    margin-top: 20px;
+    width: 483px;
+    height: 196px;
+    border: 0;
+}
