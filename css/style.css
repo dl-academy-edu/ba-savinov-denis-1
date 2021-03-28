@@ -41,12 +41,20 @@ h2 {
     display: block;
     background-color: #000000;
     color: #fff;
-    min-height: 40px;
     text-transform: uppercase;
     text-align: center;
     padding: 9px 22px;
+    border: none;
     box-sizing: border-box;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
     cursor: pointer;
+}
+
+button:disabled {
+    background: #C1C1C1;
+    color: #E1E1E1;
 }
 
 
@@ -236,7 +244,6 @@ footer {
 }
 
 .subscribe-btn {
-    border: none;
     max-width: 81px;
     width: 100%;
 }
@@ -282,7 +289,7 @@ footer {
 
 .footer-bottom-content {
     border-top: #666666 solid 1px;
-    padding: 23px 0 100px;
+    padding: 23px 0 0;
 }
 
 
@@ -340,11 +347,4 @@ footer {
 .designer-link:active {
     color: #fff;
     text-decoration-line: underline;
-}
-
-
-/* Modal window */
-
-.modal-window {
-    display: none;
 }

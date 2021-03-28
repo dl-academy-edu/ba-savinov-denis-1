@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7ae5092e20.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -16,7 +16,7 @@
 
 <body>
     <header class="header container">
-        <a href="#"><img src="images/DLK-logo.svg" alt="logo" class="header-logo"></a>
+        <a href="#"><img src="images/DLK-logo.svg" alt="logo" class="header-logo" width="100" height="52"></a>
         <nav class="main-menu" aria-label="Main menu">
             <ul class="header-list">
                 <li class="header-item"><a href="blog.html">Blog</a></li>
@@ -26,7 +26,7 @@
         </nav>
         <form class="search-form" action="#" method="post">
             <input class="search-text" type="search" placeholder="Search here...">
-            <img class="search-img" src="images/search.svg" alt="">
+            <img class="search-img" src="images/search.svg" alt="" width="24" height="24">
         </form>
         <a href="contact.html" class="contact-link">Contact Us</a>
     </header>
@@ -38,7 +38,7 @@
                     <div class="slider-toggle">
                         <ul>
                             <li class="slider-toggle-item">
-                                <button class="slider-toggle-btn slider-toggle-active" type="button "></button>
+                                <button class="slider-toggle-btn slider-toggle-active" type="button"></button>
                             </li>
                             <li class="slider-toggle-item">
                                 <button class="slider-toggle-btn" type="button"></button>
@@ -55,9 +55,9 @@
                 <div class="slider-text">
                     <h1 class="slider-title slider-text-item">THE OOH NOO COLLECTION</h1>
                     <p class="slider-text-item">Designed in Slovenia</p>
-                    <button class="slider-text-btn button" type="button" href="#">EXPLORE NOW</button>
+                    <button class="slider-text-btn button" type="button">EXPLORE NOW</button>
                 </div>
-                <img class="slider-img" src="images/monster.png" alt="" height="489" width="636">
+                <img class="slider-img" src="images/monster.png" alt="" width="636" height="489">
             </div>
             <div class="slider-footer">
                 <p>Free (continental) USA shipping on all orders of $100 USD or more!</p>
@@ -87,7 +87,7 @@
         </section>
         <section class="delivery">
             <div class="delivery-crop-img">
-                <img src="images/woman.jpg" alt="delivery-img" height="642" width="514">
+                <img src="images/woman.jpg" alt="delivery-img" width="514" height="642">
             </div>
             <div class="delivery-content">
                 <h2 class="delivery-title">Delivery</h2>
@@ -110,10 +110,10 @@
         <section class="company">
             <h2 class="visually-hidden">Company</h2>
             <ul class="company-list">
-                <li class="company-one"><img src="images/company/mail-group.png" alt="" height="60" width="193"></li>
-                <li class="company-two"><img src="images/company/apple.png" alt="" height="61" width="179"></li>
-                <li class="company-three"><img src="images/company/eltex.png" alt="" height="46" width="216"></li>
-                <li class="company-four"><img src="images/company/owox.png" alt="" height="40" width="211"></li>
+                <li class="company-one"><img src="images/company/mail-group.png" alt="" width="193" height="60"></li>
+                <li class="company-two"><img src="images/company/apple.png" alt="" width="179" height="61"></li>
+                <li class="company-three"><img src="images/company/eltex.png" alt="" width="216" height="46"></li>
+                <li class="company-four"><img src="images/company/owox.png" alt="" width="211" height="40"></li>
             </ul>
         </section>
         <section class="dlk-info">
@@ -199,17 +199,17 @@
             </div>
         </div>
     </footer>
+
+    <div class="popup-overlay"></div>
     <div class="modal-window">
         <h2 class="visually-hidden">Modal Window</h2>
         <div class="block-form">
             <form action="#" class="contact-form" method="POST">
-                <fieldset>
-                    <div>
-                        <label for="contact-name">Name</label>
-                        <input type="text" id="contact-name" name="name">
-                    </div>
+                <fieldset class="contact-wrapper">
+                    <label class="contact-name" for="contact-name">Name</label>
+                    <input type="text" id="contact-name" name="name">
                 </fieldset>
-                <fieldset>
+                <fieldset class="contact-wrapper contact-data-block">
                     <div>
                         <label for="contact-phone">Phone</label>
                         <input type="tel" id="contact-phone" name="tel">
@@ -219,20 +219,18 @@
                         <input type="email" id="contact-email" name="email">
                     </div>
                 </fieldset>
-                <fieldset>
+                <fieldset class="contact-wrapper contact-message-block">
                     <label for="message-text">Message</label>
-                    <textarea id="message-text" name="message"></textarea>
+                    <textarea id="message-text" name="message" rows="5"></textarea>
                 </fieldset>
-                <fieldset>
+                <fieldset class="contact-wrapper contact-agreement">
                     <input type="checkbox" name="agreement" id="agreement">
-                    <label for="agreement">By clicking on the button, you consent to the processing of your personal data</label>
+                    <label for="agreement" tabindex="0">By clicking on the button, you consent to the processing of your personal data</label>
                 </fieldset>
-                <button type="submit">Submit</button>
+                <button class="modal-window-btn button" type="submit" disabled>Submit</button>
             </form>
         </div>
-        <div class="block-cross">
-            <button type="button" class="cross"></button>
-        </div>
+        <button class="popup-close" type="button"><img src="images/cross.svg" alt="" width="15" height="15"></button>
     </div>
 </body>
 
