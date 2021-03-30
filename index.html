@@ -38,16 +38,16 @@
                     <div class="slider-toggle">
                         <ul>
                             <li class="slider-toggle-item">
-                                <button class="slider-toggle-btn slider-toggle-active" type="button"></button>
+                                <button class="slider-toggle-btn slider-toggle-active" type="button" data-slidenumber="01"></button>
                             </li>
                             <li class="slider-toggle-item">
-                                <button class="slider-toggle-btn" type="button"></button>
+                                <button class="slider-toggle-btn" type="button" data-slidenumber="02"></button>
                             </li>
                             <li class="slider-toggle-item">
-                                <button class="slider-toggle-btn" type="button"></button>
+                                <button class="slider-toggle-btn" type="button" data-slidenumber="03"></button>
                             </li>
                             <li class="slider-toggle-item">
-                                <button class="slider-toggle-btn" type="button"></button>
+                                <button class="slider-toggle-btn" type="button" data-slidenumber="04"></button>
                             </li>
                         </ul>
                     </div>
@@ -122,12 +122,13 @@
                 <h2 class="dlk-info-titles">Design Life Kids</h2>
                 <h3>About Us</h3>
                 <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                <a class="buynow-btn button" href="#">buy now</a>
+                <button class="dlk-info-btn button">buy now</button>
             </article>
             <article class="dlk-contacts">
                 <h2 class="dlk-info-titles">Contacts</h2>
                 <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3153.605908280936!2d-122.4201527!3d37.7758378!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sru!4v1616618199264!5m2!1sen!2sru" allowfullscreen="" loading="lazy"></iframe>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2651.820908703631!2d-122.420958355798!3d37.77681338703293!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809969fa0579%3A0xa828d2bfd4ce59fb!2s240%20Van%20Ness%20Ave%2C%20San%20Francisco%2C%20CA%2094102%2C%20USA!5e0!3m2!1sen!2sru!4v1617131216820!5m2!1sen!2sru"
+                    allowfullscreen="" loading="lazy"></iframe>
             </article>
         </section>
     </main>
@@ -165,16 +166,16 @@
                     <div class="socials">
                         <ul class="socials-list">
                             <li>
-                                <a class="socials-link facebook fab fa-facebook-f" href="#"></a>
+                                <a class="socials-link facebook fab fa-facebook-f" href="#" target="_blank"></a>
                             </li>
                             <li>
-                                <a class="socials-link twitter fab fa-twitter" href="#"></a>
+                                <a class="socials-link twitter fab fa-twitter" href="#" target="_blank"></a>
                             </li>
                             <li>
-                                <a class="socials-link pinterest fab fa-pinterest" href="#"></a>
+                                <a class="socials-link pinterest fab fa-pinterest" href="#" target="_blank"></a>
                             </li>
                             <li>
-                                <a class="socials-link instagram fab fa-instagram" href="#"></a>
+                                <a class="socials-link instagram fab fa-instagram" href="#" target="_blank"></a>
                             </li>
                         </ul>
                     </div>
@@ -200,7 +201,7 @@
         </div>
     </footer>
 
-    <div class="popup-overlay"></div>
+    <div class="modal-overlay"></div>
     <div class="modal-window">
         <h2 class="visually-hidden">Modal Window</h2>
         <div class="block-form">
@@ -232,6 +233,7 @@
         </div>
         <button class="popup-close" type="button"><img src="images/cross.svg" alt="" width="15" height="15"></button>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

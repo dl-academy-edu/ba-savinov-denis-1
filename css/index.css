@@ -10,6 +10,7 @@
 .slider-control {
     margin-top: 18px;
     margin-left: 28px;
+    width: 15%;
 }
 
 .slider-toggle ul {
@@ -52,7 +53,7 @@
 
 .slider-text {
     width: auto;
-    padding: 90px 0 0 46px;
+    padding: 90px 0 0 19px;
 }
 
 .slider-text p {
@@ -81,7 +82,7 @@
 }
 
 .slider-title {
-    letter-spacing: 1.1px;
+    font-size: 40px;
 }
 
 .slider-text-item {
@@ -367,7 +368,7 @@
     margin: 0;
 }
 
-.buynow-btn {
+.dlk-info-btn {
     margin-top: 20px;
     max-width: 123px;
 }
@@ -403,7 +404,7 @@
 
 /* Modal window */
 
-.popup-overlay {
+.modal-overlay {
     width: 100%;
     height: 100vh;
     background: rgba(125, 151, 218, 0.8);
