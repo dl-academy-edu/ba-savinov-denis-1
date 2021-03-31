@@ -61,7 +61,7 @@ button:disabled {
 /* HEADER */
 
 .header {
-    padding: 48px 0 129px;
+    padding: 48px 0 60px;
     display: flex;
     align-items: center;
 }

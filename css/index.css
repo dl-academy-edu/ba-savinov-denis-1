@@ -1,5 +1,9 @@
 /* SLIDER */
 
+.slider {
+    margin-top: 69px;
+}
+
 .slider-body {
     display: flex;
     justify-content: space-between;
@@ -115,7 +119,7 @@
 /* CATEGORY */
 
 .category {
-    padding-top: 32px;
+    padding-top: 31px;
 }
 
 .category-title {
@@ -270,7 +274,7 @@
 }
 
 .delivery-content p {
-    margin: 15px 0 0 0;
+    margin: 17px 0 0 0;
     max-width: 470px;
 }
 
@@ -279,14 +283,14 @@
 }
 
 .delivery-menu {
-    margin: 0 0 31px 0;
+    margin: 0 0 25px 0;
     padding: 0;
     list-style-type: none;
     font-family: 'Crimson Text', 'Times New Roman', serif;
     font-style: italic;
     font-weight: normal;
     font-size: 26px;
-    line-height: 32px;
+    line-height: 34px;
 }
 
 .delivery-menu-item {
@@ -313,7 +317,7 @@
 .delivery-learn-btn {
     max-width: 149px;
     width: 100%;
-    margin-top: 26px;
+    margin-top: 25px;
 }
 
 
@@ -337,7 +341,7 @@
 
 .dlk-info {
     display: flex;
-    padding-bottom: 55px;
+    padding-bottom: 57px;
 }
 
 .dlk-about,

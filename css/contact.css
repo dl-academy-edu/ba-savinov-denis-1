@@ -1,4 +1,17 @@
+.page-title {
+    margin: 0;
+    font-size: 40px;
+    line-height: 49px;
+}
+
+
 /* contact form*/
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
 
 .contact-form-block {
     box-sizing: border-box;
@@ -6,4 +19,68 @@
     width: 100%;
     background: #E5EAF8;
     padding: 42px 40px;
+}
+
+.contact-form label {
+    font-family: 'Open Sans', Verdana, sans-serif;
+    line-height: 19px;
+}
+
+.contact-data-block {
+    margin-top: 22px;
+}
+
+.contact-wrapper input:not([type=checkbox]),
+.contact-wrapper textarea {
+    margin-top: 5px;
+}
+
+.contact-agreement {
+    margin-top: 20px;
+}
+
+.block-text {
+    margin-left: 120px;
+    max-width: 380px;
+    width: 100%;
+}
+
+
+/*breadcrumbs*/
+
+.breadcrumbs {
+    font-family: 'Crimson Text', 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 16px 0 50px;
+}
+
+.breadcrumbs-list {
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumbs-list li {
+    margin-right: 17px;
+}
+
+.breadcrumbs-link::after {
+    content: '';
+    display: inline-block;
+    background-image: url('/images/next-arrow.svg');
+    background-size: 9px 12px;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    height: 9px;
+    width: 12px;
+}
+
+.breadcrumbs-item-active {
+    text-transform: capitalize;
+    opacity: 0.5;
 }
