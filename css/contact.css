@@ -1,0 +1,9 @@
+/* contact form*/
+
+.contact-form-block {
+    box-sizing: border-box;
+    max-width: 680px;
+    width: 100%;
+    background: #E5EAF8;
+    padding: 42px 40px;
+}

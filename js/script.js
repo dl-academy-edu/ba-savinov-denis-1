@@ -3,11 +3,9 @@ let modalOpenBtn = document.querySelector(".dlk-info-btn"),
     modalWindow = document.querySelector(".modal-window"),
     modalCloseBtn = document.querySelector(".popup-close"),
     modalInput = modalWindow.querySelector("#contact-name"),
-    checkboxAgrement = modalWindow.querySelector("#agreement"),
-    modalSubmitBtn = modalWindow.querySelector(".modal-window-btn"),
     sliderToggleBtn = document.querySelectorAll(".slider-toggle-btn"),
-    sliderCounter = document.querySelector(".slider-counter"),
-    starRating = document.querySelectorAll(".hov_star");
+    sliderCounter = document.querySelector(".slider-counter");
+
 
 
 // Modal window open
@@ -35,17 +33,6 @@ window.addEventListener('keydown', (event) => {
 
 })
 
-// Modal window unlock submit button
-
-checkboxAgrement.addEventListener('change', () => {
-
-    if (checkboxAgrement.checked) {
-        modalSubmitBtn.disabled = false;
-    } else {
-        modalSubmitBtn.disabled = true;
-    }
-})
-
 // slider control
 
 sliderToggleBtn.forEach((itemBtn) => itemBtn.addEventListener(`click`, (event) => {
@@ -59,15 +46,3 @@ function removeClassActiveBtn(arr) {
         item.classList.remove('slider-toggle-active');
     })
 }
-
-
-//star rating accessibility
-
-starRating.forEach((starRating) => starRating.addEventListener(`focus`, (event) => {
-    selectStar = event.target;
-    selectStar.addEventListener('keydown', (ev) => {
-        if (ev.code === "Space") {
-            selectStar.click();
-        }
-    });
-}));

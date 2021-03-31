@@ -16,7 +16,7 @@
 
 <body>
     <header class="header container">
-        <a href="#"><img src="images/DLK-logo.svg" alt="logo" class="header-logo" width="100" height="52"></a>
+        <a href="/"><img src="images/DLK-logo.svg" alt="logo" class="header-logo" width="100" height="52"></a>
         <nav class="main-menu" aria-label="Main menu">
             <ul class="header-list">
                 <li class="header-item"><a href="blog.html">Blog</a></li>
@@ -41,31 +41,33 @@
         </section>
         <section class="contacts">
             <h2 class="visually-hidden">Contact form</h2>
-            <form action="#" class="contact-form" method="POST">
-                <fieldset class="contact-wrapper">
-                    <label class="contact-name" for="contact-name">Name</label>
-                    <input type="text" id="contact-name" name="name">
-                </fieldset>
-                <fieldset class="contact-wrapper contact-data-block">
-                    <div>
-                        <label for="contact-phone">Phone</label>
-                        <input type="tel" id="contact-phone" name="tel">
-                    </div>
-                    <div>
-                        <label for="contact-email">Email</label>
-                        <input type="email" id="contact-email" name="email">
-                    </div>
-                </fieldset>
-                <fieldset class="contact-wrapper contact-message-block">
-                    <label for="message-text">Message</label>
-                    <textarea id="message-text" name="message" rows="5"></textarea>
-                </fieldset>
-                <fieldset class="contact-wrapper contact-agreement">
-                    <input type="checkbox" name="agreement" id="agreement">
-                    <label for="agreement" tabindex="0">By clicking on the button, you consent to the processing of your personal data</label>
-                </fieldset>
-                <button class="modal-window-btn button" type="submit" disabled>Submit</button>
-            </form>
+            <div class="contact-form-block">
+                <form action="#" class="contact-form" method="POST">
+                    <fieldset class="contact-wrapper">
+                        <label class="contact-name" for="contact-name">Name</label>
+                        <input type="text" id="contact-name" name="name">
+                    </fieldset>
+                    <fieldset class="contact-wrapper contact-data-block">
+                        <div>
+                            <label for="contact-phone">Phone</label>
+                            <input type="tel" id="contact-phone" name="tel">
+                        </div>
+                        <div>
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="email">
+                        </div>
+                    </fieldset>
+                    <fieldset class="contact-wrapper contact-message-block">
+                        <label for="message-text">Message</label>
+                        <textarea id="message-text" name="message" rows="5"></textarea>
+                    </fieldset>
+                    <fieldset class="contact-wrapper contact-agreement">
+                        <input type="checkbox" name="agreement" id="agreement">
+                        <label for="agreement" tabindex="0">By clicking on the button, you consent to the processing of your personal data</label>
+                    </fieldset>
+                    <button class="modal-window-btn button" type="submit" disabled>Submit</button>
+                </form>
+            </div>
             <div class="block-text">
                 <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
                 <p>Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
@@ -141,6 +143,8 @@
             </div>
         </div>
     </footer>
+    <script src="js/star-rating.min.js"></script>
+    <script src="js/contact-form.min.js"></script>
 </body>
 
 </html>
