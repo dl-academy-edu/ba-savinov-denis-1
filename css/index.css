@@ -21,7 +21,7 @@
 }
 
 .slider-counter {
-    font-family: Montserrat;
+    font-family: 'Montserrat', Verdana, sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 60px;
@@ -57,7 +57,7 @@
 }
 
 .slider-text p {
-    font-family: Crimson Text;
+    font-family: 'Crimson Text', 'Times New Roman', serif;
     font-style: italic;
     font-weight: normal;
     font-size: 20px;
@@ -119,7 +119,7 @@
 }
 
 .category-title {
-    font-family: Montserrat;
+    font-family: 'Montserrat', Verdana, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 38px;
@@ -131,6 +131,7 @@
 .category-wrapper {
     display: flex;
     justify-content: space-between;
+    min-width: 0;
 }
 
 .category-item {
@@ -144,7 +145,7 @@
 
 .category-item h3 {
     margin: auto;
-    font-family: Montserrat;
+    font-family: 'Montserrat', Verdana, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
@@ -182,6 +183,18 @@
     background: url(/images/category-accessories.png) no-repeat center;
     background-blend-mode: multiply;
     background-color: #D5D4E1;
+}
+
+.category-five {
+    background: url(/images/category-sale.png) no-repeat center;
+    background-blend-mode: multiply;
+    background-color: #F3D0DB;
+}
+
+.category-six {
+    background: url(/images/category-adults.png) no-repeat center;
+    background-blend-mode: multiply;
+    background-color: #E5EAF8;
 }
 
 .category-control {
@@ -258,7 +271,7 @@
 
 .delivery-content p {
     margin: 15px 0 0 0;
-    max-width: 83%;
+    max-width: 470px;
 }
 
 .delivery-title {
@@ -269,7 +282,7 @@
     margin: 0 0 31px 0;
     padding: 0;
     list-style-type: none;
-    font-family: Crimson Text;
+    font-family: 'Crimson Text', 'Times New Roman', serif;
     font-style: italic;
     font-weight: normal;
     font-size: 26px;
@@ -353,7 +366,7 @@
 
 .dlk-about h3 {
     margin: 11px 0 0 0;
-    font-family: Crimson Text;
+    font-family: 'Crimson Text', 'Times New Roman', serif;
     font-style: italic;
     font-weight: normal;
     font-size: 26px;
@@ -432,7 +445,7 @@
 }
 
 .contact-form label {
-    font-family: Roboto;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 14px;
     line-height: 16px;
     display: block;

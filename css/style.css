@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Verdana, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -14,7 +14,7 @@ a {
 
 h1,
 h2 {
-    font-family: Montserrat;
+    font-family: 'Montserrat', Verdana, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 38px;
