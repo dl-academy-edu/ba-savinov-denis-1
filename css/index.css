@@ -442,6 +442,7 @@
 
 .popup-visible {
     display: block;
+    z-index: 5;
 }
 
 .contact-form label {
