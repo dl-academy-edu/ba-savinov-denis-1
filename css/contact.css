@@ -27,22 +27,39 @@
 }
 
 .contact-data-block {
-    margin-top: 22px;
+    margin-top: 19px;
 }
 
 .contact-wrapper input:not([type=checkbox]),
 .contact-wrapper textarea {
-    margin-top: 5px;
+    margin-top: 4px;
 }
 
 .contact-agreement {
-    margin-top: 20px;
+    margin-top: 17px;
+}
+
+.modal-window-btn {
+    margin-top: 18px;
 }
 
 .block-text {
     margin-left: 120px;
     max-width: 380px;
     width: 100%;
+}
+
+.block-text p {
+    margin: 0 0 19px;
+}
+
+.block-text-slogan {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #C29974;
 }
 
 
@@ -60,13 +77,12 @@
 .breadcrumbs-list {
     list-style-type: none;
     display: flex;
-    text-align: center;
     margin: 0;
     padding: 0;
 }
 
 .breadcrumbs-list li {
-    margin-right: 17px;
+    margin-right: 20px;
 }
 
 .breadcrumbs-link::after {
@@ -76,8 +92,8 @@
     background-size: 9px 12px;
     background-repeat: no-repeat;
     margin-left: 20px;
-    height: 9px;
-    width: 12px;
+    height: 12px;
+    width: 9px;
 }
 
 .breadcrumbs-item-active {

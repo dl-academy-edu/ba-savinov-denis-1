@@ -274,7 +274,7 @@
 }
 
 .delivery-content p {
-    margin: 17px 0 0 0;
+    margin: 15px 0 0 0;
     max-width: 470px;
 }
 
@@ -283,7 +283,7 @@
 }
 
 .delivery-menu {
-    margin: 0 0 25px 0;
+    margin: 0 0 29px 0;
     padding: 0;
     list-style-type: none;
     font-family: 'Crimson Text', 'Times New Roman', serif;
@@ -294,7 +294,7 @@
 }
 
 .delivery-menu-item {
-    margin: 21px 0;
+    margin: 20px 0;
 }
 
 .delivery-menu-active {
@@ -317,7 +317,7 @@
 .delivery-learn-btn {
     max-width: 149px;
     width: 100%;
-    margin-top: 25px;
+    margin-top: 26px;
 }
 
 
@@ -341,13 +341,13 @@
 
 .dlk-info {
     display: flex;
-    padding-bottom: 57px;
+    padding-bottom: 60px;
 }
 
 .dlk-about,
 .dlk-contacts {
-    width: 41%;
-    padding: 0 30px;
+    max-width: 543px;
+    width: 100%;
 }
 
 .dlk-about {
@@ -355,17 +355,9 @@
     position: relative;
 }
 
-.dlk-about::after {
-    content: '';
-    position: absolute;
-    top: 23px;
-    left: 0px;
-    max-width: 543px;
-    width: 100%;
-    max-height: 236px;
-    height: 100%;
+.dlk-info-wrapper {
+    padding: 23px 30px 35px;
     background-color: #E1F0F7;
-    z-index: -1;
 }
 
 .dlk-about h3 {
@@ -382,7 +374,7 @@
 }
 
 .dlk-info-titles {
-    margin: 0;
+    margin: 0 0 -22px 30px;
 }
 
 .dlk-info-btn {
@@ -412,7 +404,8 @@
 }
 
 .map {
-    margin-top: 20px;
+    display: block;
+    margin: -15px auto 0;
     width: 483px;
     height: 196px;
     border: 0;
