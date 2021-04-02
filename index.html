@@ -7,15 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7ae5092e20.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="/css/index.min.css">
     <title>DLK</title>
 </head>
 
 <body>
     <header class="header container">
-        <a href="#"><img src="images/DLK-logo.svg" alt="logo" class="header-logo"></a>
+        <a href="#"><img src="images/DLK-logo.svg" alt="logo" class="header-logo" width="100" height="52"></a>
         <nav class="main-menu" aria-label="Main menu">
             <ul class="header-list">
                 <li class="header-item"><a href="blog.html">Blog</a></li>
@@ -25,9 +27,9 @@
         </nav>
         <form class="search-form" action="#" method="post">
             <input class="search-text" type="search" placeholder="Search here...">
-            <img class="search-img" src="images/search.svg" alt="">
+            <img class="search-img" src="images/search.svg" alt="" width="24" height="24">
         </form>
-        <a href="contact.html" class="contact-link">Contact Us</a>
+        <a class="contact-link" href="contact.html">Contact Us</a>
     </header>
     <main class="container">
         <section class="slider">
@@ -36,61 +38,74 @@
                     <div class="slider-counter">01</div>
                     <div class="slider-toggle">
                         <ul>
-                            <li><button type="button"></button></li>
-                            <li><button type="button"></button></li>
-                            <li><button type="button"></button></li>
-                            <li><button type="button"></button></li>
+                            <li class="slider-toggle-item">
+                                <button class="slider-toggle-btn slider-toggle-active" type="button" data-slidenumber="01"></button>
+                            </li>
+                            <li class="slider-toggle-item">
+                                <button class="slider-toggle-btn" type="button" data-slidenumber="02"></button>
+                            </li>
+                            <li class="slider-toggle-item">
+                                <button class="slider-toggle-btn" type="button" data-slidenumber="03"></button>
+                            </li>
+                            <li class="slider-toggle-item">
+                                <button class="slider-toggle-btn" type="button" data-slidenumber="04"></button>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="slider-text">
-                    <h1>THE OOH NOO COLLECTION</h1>
-                    <p>Designed in Slovenia</p>
-                    <a href="#" class="slider-btn button">EXPLORE NOW</a>
+                    <h1 class="slider-title slider-text-item">THE OOH NOO COLLECTION</h1>
+                    <p class="slider-text-item">Designed in Slovenia</p>
+                    <button class="slider-text-btn button" type="button">EXPLORE NOW</button>
                 </div>
-                <img src="images/monster.png" alt="" class="slider-img" height="461" width="635">
+                <img class="slider-img" src="images/monster.png" alt="" width="636" height="489">
             </div>
-            <div class="slider-foother">
+            <div class="slider-footer">
                 <p>Free (continental) USA shipping on all orders of $100 USD or more!</p>
             </div>
         </section>
-        <section class="category">
-            <div class="category-wrapper">
-                <div class="category-item">
-                    <a href="#"></a>
+        <section class="category swiper-container">
+            <h2 class="category-title">Category Products</h2>
+            <div class="category-wrapper swiper-wrapper">
+                <a class="category-item category-one swiper-slide" href="#">
                     <h3>APPAREL KIDS</h3>
-                </div>
-                <div class="category-item">
-                    <a href="#"></a>
+                </a>
+                <a class="category-item category-two swiper-slide" href="#">
                     <h3>HOLIDAY SHOP</h3>
-                </div>
-                <div class="category-item">
-                    <a href="#"></a>
+                </a>
+                <a class="category-item category-three swiper-slide" href="#">
                     <h3>TOYS</h3>
-                </div>
-                <div class="category-item">
-                    <a href="#"></a>
+                </a>
+                <a class="category-item category-four swiper-slide" href="#">
                     <h3>ACCESSORIES</h3>
-                </div>
+                </a>
+                <a class="category-item category-five swiper-slide" href="#">
+                    <h3>SALE</h3>
+                </a>
+                <a class="category-item category-six swiper-slide" href="#">
+                    <h3>APPAREL ADULTS</h3>
+                </a>
             </div>
             <div class="category-control">
-                <button type="button" class="prev-category"></button>
-                <button type="button" class="next-category"></button>
+                <button class="prev-category" type="button"></button>
+                <button class="next-category" type="button"></button>
                 <p class="category-description">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
             </div>
         </section>
         <section class="delivery">
-            <img src="images/woman.jpg" alt="delivery-img" height="559" width="480">
+            <div class="delivery-crop-img">
+                <img src="images/woman.jpg" alt="delivery-img" width="514" height="642">
+            </div>
             <div class="delivery-content">
-                <h2>Delivery</h2>
+                <h2 class="delivery-title">Delivery</h2>
                 <ul class="delivery-menu">
-                    <li>
+                    <li class="delivery-menu-item delivery-menu-active">
                         <a href="#">Delivery</a>
                     </li>
-                    <li>
+                    <li class="delivery-menu-item">
                         <a href="#">Guarantee</a>
                     </li>
-                    <li>
+                    <li class="delivery-menu-item">
                         <a href="#">Credit</a>
                     </li>
                 </ul>
@@ -102,125 +117,136 @@
         <section class="company">
             <h2 class="visually-hidden">Company</h2>
             <ul class="company-list">
-                <li class="company-one"><img src="images/company/mail-group.png" alt="" height="60" width="193"></li>
-                <li class="company-two"><img src="images/company/apple.png" alt="" height="61" width="179"></li>
-                <li class="company-three"><img src="images/company/eltex.png" alt="" height="46" width="216"></li>
-                <li class="company-four"><img src="images/company/owox.png" alt="" height="40" width="211"></li>
+                <li class="company-one"><img src="images/company/mail-group.png" alt="" width="193" height="60"></li>
+                <li class="company-two"><img src="images/company/apple.png" alt="" width="179" height="61"></li>
+                <li class="company-three"><img src="images/company/eltex.png" alt="" width="216" height="46"></li>
+                <li class="company-four"><img src="images/company/owox.png" alt="" width="211" height="40"></li>
             </ul>
         </section>
         <section class="dlk-info">
             <h2 class="visually-hidden">DLK info</h2>
             <article class="dlk-about">
-                <h2>Design Life Kids</h2>
-                <h3>About Us</h3>
-                <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                <a class="buynow-btn button" href="#">buy now</a>
+                <h2 class="dlk-info-titles">Design Life Kids</h2>
+                <div class="dlk-info-wrapper">
+                    <h3>About Us</h3>
+                    <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                    <button class="dlk-info-btn button">buy now</button>
+                </div>
             </article>
             <article class="dlk-contacts">
-                <h2>Contacts</h2>
-                <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                <img class="map" src="images/mini-map.jpg" alt="mini-map">
+                <h2 class="dlk-info-titles">Contacts</h2>
+                <div class="dlk-info-wrapper">
+                    <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                </div>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2651.820908703631!2d-122.420958355798!3d37.77681338703293!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809969fa0579%3A0xa828d2bfd4ce59fb!2s240%20Van%20Ness%20Ave%2C%20San%20Francisco%2C%20CA%2094102%2C%20USA!5e0!3m2!1sen!2sru!4v1617131216820!5m2!1sen!2sru"
+                    allowfullscreen="" loading="lazy"></iframe>
             </article>
         </section>
     </main>
     <footer>
         <div class="container">
-            <div class="foother-lists">
+            <div class="footer-top-content footer-lists">
                 <div class="navigation-list">
-                    <h4>Navigation</h4>
-                    <ul class="navigation-menu">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Design Services</a></li>
-                        <li><a href="#">Featured On</a></li>
-                        <li><a href="#">2018 Holiday Catalog</a></li>
-                        <li><a href="#">Shop By Designer</a></li>
+                    <h4 class="footer-titles">Navigation</h4>
+                    <ul class="footer-navigation-menu">
+                        <li class="footer-menu-item"><a href="#">About Us</a></li>
+                        <li class="footer-menu-item"><a href="#">Blog</a></li>
+                        <li class="footer-menu-item"><a href="#">Design Services</a></li>
+                        <li class="footer-menu-item"><a href="#">Featured On</a></li>
+                        <li class="footer-menu-item"><a href="#">2018 Holiday Catalog</a></li>
+                        <li class="footer-menu-item"><a href="#">Shop By Designer</a></li>
                     </ul>
                 </div>
-                <div class="customer-info">
-                    <h4>Customer Information</h4>
-                    <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Sale Exclusions</a></li>
-                        <li><a href="#">Shipping & Returns</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Search</a></li>
+                <div class="footer-customer-info">
+                    <h4 class="footer-titles">Customer Information</h4>
+                    <ul class="footer-customer-menu">
+                        <li class="footer-menu-item"><a href="#">Contact Us</a></li>
+                        <li class="footer-menu-item"><a href="#">Sale Exclusions</a></li>
+                        <li class="footer-menu-item"><a href="#">Shipping & Returns</a></li>
+                        <li class="footer-menu-item"><a href="#">Terms & Conditions</a></li>
+                        <li class="footer-menu-item"><a href="#">Privacy Policy</a></li>
+                        <li class="footer-menu-item"><a href="#">Search</a></li>
                     </ul>
                 </div>
                 <div class="connect">
-                    <h4>Connect</h4>
+                    <h4 class="footer-titles">Connect</h4>
                     <form class="subscribe-form">
                         <input class="input-email" type="email" name="email" placeholder="Email">
-                        <button class="submit-btn button" type="submit"></button>
+                        <button class="subscribe-btn button" type="submit">Join</button>
                     </form>
                     <div class="socials">
-                        <ul>
+                        <ul class="socials-list">
                             <li>
-                                <a class="facebook fab fa-facebook-f" href="#"></a>
+                                <a class="socials-link facebook fab fa-facebook-f" href="#" target="_blank"></a>
                             </li>
                             <li>
-                                <a class="twitter fab fa-twitter" href="#"></a>
+                                <a class="socials-link twitter fab fa-twitter" href="#" target="_blank"></a>
                             </li>
                             <li>
-                                <a class="pinterest fab fa-pinterest" href="#"></a>
+                                <a class="socials-link pinterest fab fa-pinterest" href="#" target="_blank"></a>
                             </li>
                             <li>
-                                <a class="instagram fab fa-instagram" href="#"></a>
+                                <a class="socials-link instagram fab fa-instagram" href="#" target="_blank"></a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="foother-lists">
-                <div class="company-rating">
-                    <div class="rating-label">Company Rating</div>
-                    <div class="rating__item far fa-star">1</div>
-                    <div class="rating__item far fa-star">2</div>
-                    <div class="rating__item far fa-star">3</div>
-                    <div class="rating__item far fa-star">4</div>
-                    <div class="rating__item far fa-star">5</div>
+            <div class="footer-bottom-content footer-lists">
+                <div class="rating-list">
+                    <input class="star-rating-input" type="radio" id="star-rating-5" name="star" value="5">
+                    <label class="rating-item fas fa-star hov_star" for="star-rating-5" tabindex="0"></label>
+                    <input class="star-rating-input" type="radio" id="star-rating-4" name="star" value="4">
+                    <label class="rating-item fas fa-star hov_star" for="star-rating-4" tabindex="0"></label>
+                    <input class="star-rating-input" type="radio" id="star-rating-3" name="star" value="3">
+                    <label class="rating-item fas fa-star hov_star" for="star-rating-3" tabindex="0"></label>
+                    <input class="star-rating-input" type="radio" id="star-rating-2" name="star" value="2">
+                    <label class="rating-item fas fa-star hov_star" for="star-rating-2" tabindex="0"></label>
+                    <input class="star-rating-input" type="radio" id="star-rating-1" name="star" value="1">
+                    <label class="rating-item fas fa-star hov_star" for="star-rating-1" tabindex="0"></label>
+                    <span class="rating-label">Company Rating</span>
                 </div>
-                <div class="copyright">Copyright © 2018 Dlk • Design Life Kids</div>
-                <div class="designer-info">Web Design — Direct Line Development</div>
+                <span class="copyright">Copyright © 2018 Dlk • Design Life Kids</span>
+                <a class="designer-link" href="#">Web Design — Direct Line Development</a>
             </div>
         </div>
     </footer>
+
+    <div class="modal-overlay"></div>
     <div class="modal-window">
         <h2 class="visually-hidden">Modal Window</h2>
-        <div class="block-form">
-            <form action="#" class="contact-form" method="POST">
-                <fieldset>
-                    <div>
-                        <label for="contact-name">Name</label>
-                        <input type="text" id="contact-name" name="name">
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <div>
-                        <label for="contact-phone">Phone</label>
-                        <input type="tel" id="contact-phone" name="tel">
-                    </div>
-                    <div>
-                        <label for="contact-email">Email</label>
-                        <input type="email" id="contact-email" name="email">
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <label for="message-text">Message</label>
-                    <textarea id="message-text" name="message"></textarea>
-                </fieldset>
-                <fieldset>
-                    <input type="checkbox" name="agreement" id="agreement">
-                    <label for="agreement">By clicking on the button, you consent to the processing of your personal data</label>
-                </fieldset>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-        <div class="block-cross">
-            <button type="button" class="cross"></button>
-        </div>
+        <form action="#" class="contact-form" method="POST">
+            <fieldset class="contact-wrapper">
+                <label class="contact-name" for="contact-name">Name</label>
+                <input type="text" id="contact-name" name="name">
+            </fieldset>
+            <fieldset class="contact-wrapper contact-data-block">
+                <div>
+                    <label for="contact-phone">Phone</label>
+                    <input type="tel" id="contact-phone" name="tel">
+                </div>
+                <div>
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" name="email">
+                </div>
+            </fieldset>
+            <fieldset class="contact-wrapper contact-message-block">
+                <label for="message-text">Message</label>
+                <textarea id="message-text" name="message" rows="5"></textarea>
+            </fieldset>
+            <fieldset class="contact-wrapper contact-agreement">
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement" tabindex="0">By clicking on the button, you consent to the processing of your personal data</label>
+            </fieldset>
+            <button class="modal-window-btn button" type="submit" disabled>Submit</button>
+        </form>
+        <button class="popup-close" type="button"><img src="images/cross.svg" alt="" width="15" height="15"></button>
     </div>
+    <script src="js/script.min.js"></script>
+    <script src="js/star-rating.min.js"></script>
+    <script src="js/contact-form.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/swiper-slider.min.js"></script>
 </body>
 
 </html>
