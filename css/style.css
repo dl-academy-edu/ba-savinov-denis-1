@@ -25,6 +25,9 @@ h2 {
 }
 
 .visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 0;
     height: 0;
     font-size: 0;
     overflow: hidden;
@@ -487,6 +490,14 @@ footer {
     border: none;
 }
 
+.popup-close:hover {
+    opacity: 0.5;
+}
+
+.popup-close:active {
+    opacity: 0.3;
+}
+
 
 /*breadcrumbs*/
 
@@ -533,4 +544,55 @@ footer {
     margin: 0;
     font-size: 40px;
     line-height: 49px;
+}
+
+
+/* articles-control */
+
+.articles-control {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 47px;
+}
+
+.articles-control button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.page-list {
+    list-style-type: none;
+    display: flex;
+    padding-left: 65px;
+}
+
+.page-list li {
+    margin-right: 66px;
+}
+
+.page-item {
+    font-family: var(--font-montserrat);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.page-item:hover:not(.page-item-active) {
+    opacity: 0.5;
+}
+
+.page-item-active {
+    color: #C29974;
+}
+
+.prev-page:hover svg path,
+.next-page:hover svg path {
+    stroke: #C29974;
+    stroke-opacity: 1;
+}
+
+.prev-page:active svg path,
+.next-page:active svg path {
+    stroke-opacity: 0.5;
 }
