@@ -564,6 +564,7 @@ footer {
 .page-list {
     list-style-type: none;
     display: flex;
+    justify-content: center;
     padding-left: 65px;
 }
 
