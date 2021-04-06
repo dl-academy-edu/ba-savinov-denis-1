@@ -1,0 +1,263 @@
+/* filter-block */
+
+.filter-block {
+    background: rgba(125, 151, 218, 0.2);
+    padding: 42px 0;
+}
+
+.filter-block .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.filter-block h3 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.filter-block ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+/* cost */
+
+.filter-cost {
+    max-width: 207px;
+    width: 100%;
+}
+
+.cost-values {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cost-range {
+    -webkit-appearance: none;
+    width: 188px;
+}
+
+.cost-range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    border-radius: 1px;
+    background: #72757C;
+}
+
+.cost-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: url(/images/toys/range-circle.svg) no-repeat;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+.cost-range:hover::-webkit-slider-thumb {
+    opacity: 0.9;
+}
+
+.cost-range::-moz-range-track {
+    -moz-appearance: none;
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    background: #72757C;
+    border-radius: 1px;
+}
+
+.cost-range::-moz-range-thumb {
+    -moz-appearance: none;
+    background: url(/images/toys/range-circle.svg) no-repeat;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+.cost-range:hover:-moz-range-thumb {
+    opacity: 0.9;
+}
+
+.cost-range::-ms-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    background: #000000;
+    opacity: 0.5;
+    border-color: transparent;
+    color: transparent;
+}
+
+.cost-range::-ms-fill-lower {
+    background: #C29974;
+}
+
+.cost-range::-ms-fill-upper {
+    background: #000000;
+    opacity: 0.5;
+}
+
+.cost-range::-ms-thumb {
+    -ms-appearance: none;
+    background: url(/images/toys/range-circle.svg) no-repeat;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    margin-top: -5px;
+}
+
+
+/* filter-color */
+
+.filter-color input[type=checkbox] {
+    display: none;
+}
+
+.filter-color label {
+    position: relative;
+    margin-left: 33px;
+    cursor: pointer;
+}
+
+.filter-color label::before {
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: 0;
+    width: 19px;
+    height: 19px;
+    border: 2px solid #C29974;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.filter-color label::after {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background-image: url(/images/stroke.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+
+.filter-color input[type=checkbox]:checked+label:after {
+    opacity: 1;
+}
+
+.filter-color input[type=checkbox]:checked+label:before {
+    background-color: #fff;
+}
+
+
+/* filter-delivery */
+
+.filter-delivery input[type=radio] {
+    display: none;
+}
+
+.filter-delivery label {
+    position: relative;
+    cursor: pointer;
+}
+
+.filter-delivery label::before {
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #C29974;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.filter-delivery label::after {
+    content: '';
+    position: absolute;
+    left: -29px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    background: #C29974;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.filter-delivery input[type=radio]:checked+label:after {
+    opacity: 1;
+}
+
+.filter-apply-btn {
+    margin-right: 85px;
+}
+
+
+/* filter-amount */
+
+.filter-amount input[type=radio] {
+    display: none;
+}
+
+.filter-amount label {
+    display: block;
+    width: 80px;
+    text-align: center;
+    background-color: #fff;
+    padding: 7px 0 6px;
+    cursor: pointer;
+}
+
+.filter-amount input[type=radio]:checked+label {
+    background: #F3D0DB;
+}
+
+.filter-amount input[type=radio]:hover+label {
+    background: #EDDEEB;
+    color: #877379;
+}
+
+.amount-list {
+    display: flex;
+}
+
+.filter-apply-btn {
+    display: block;
+    max-width: 95px;
+    width: 100%;
+}
+
+
+/* toys-list */
+
+.toys-list {
+    padding: 60px 0 50px;
+}
+
+.toys-list-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style-type: none;
+}
+
+.toys-item-block {
+    max-width: 380px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.toys-item-block:not(:nth-child(3n)) {
+    margin-right: 20px;
+}
