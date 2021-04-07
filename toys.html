@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="/css/style.min.css">
-    <link rel="stylesheet" href="css/toys.css">
+    <link rel="stylesheet" href="css/toys.min.css">
     <title>Toys</title>
 </head>
 
@@ -46,7 +46,7 @@
             <div class="container">
                 <div class="filter-cost">
                     <h3>Cost</h3>
-                    <input class="cost-range" type="range" name="cost" id="cost" min="0" max="500" value="125" id="range">
+                    <input class="cost-range" type="range" name="cost" id="cost" min="0" max="500" value="105" id="range">
                     <div class="cost-values">
                         <span class="cost-values-min">0</span>
                         <span class="cost-values-max">500</span>
@@ -54,9 +54,9 @@
                 </div>
                 <div class="filter-color">
                     <h3>Color</h3>
-                    <ul>
+                    <ul class="filter-color-list">
                         <li>
-                            <input type="checkbox" name="color-item-checkbox" id="one-color">
+                            <input type="checkbox" name="color-item-checkbox" id="one-color" checked>
                             <label for="one-color">Black</label>
                         </li>
                         <li>
@@ -75,7 +75,7 @@
                 </div>
                 <div class="filter-delivery">
                     <h3>Delivery</h3>
-                    <ul>
+                    <ul class="filter-delivery-list">
                         <li>
                             <input type="radio" name="delivery-item" id="delivery-item-one">
                             <label for="delivery-item-one">Free shipping</label>
@@ -110,44 +110,50 @@
             <h2 class="visually-hidden">Toys list</h2>
             <ul class="toys-list-block">
                 <li class="toys-item-block">
-                    <a href="#">
+                    <a class="toys-item-link" href="#">
                         <img src="images/toys/shark-bag.jpg" alt="" height="385" width="380">
+                        <span class="toys-img-popup">LEARN MORE</span>
                         <h3 class="toy-title">SHARKY BEAN BAG CHAIR COVER</h3>
                         <span class="price-toy">$60.00 USD</span>
                     </a>
                 </li>
                 <li class="toys-item-block">
-                    <a href="#">
+                    <a class="toys-item-link" href="#">
                         <img src="images/toys/deco-frames.png" alt="" height="385" width="380">
-                        <h3>BRASS DECO FRAMES</h3>
+                        <span class="toys-img-popup">LEARN MORE</span>
+                        <h3 class="toy-title">BRASS DECO FRAMES</h3>
                         <span class="price-toy">$66.00 USD</span>
                     </a>
                 </li>
                 <li class="toys-item-block">
-                    <a href="#">
+                    <a class="toys-item-link" href="#">
                         <img src="images/toys/full-apron.png" alt="" height="385" width="380">
-                        <h3>CIBO FULL APRON</h3>
+                        <span class="toys-img-popup">LEARN MORE</span>
+                        <h3 class="toy-title">CIBO FULL APRON</h3>
                         <span class="price-toy">$60.00 USD</span>
                     </a>
                 </li>
                 <li class="toys-item-block">
-                    <a href="#">
+                    <a class="toys-item-link" href="#">
                         <img src="images/toys/gumball-machine.jpg" alt="" height="385" width="380">
-                        <h3>GATCHA GATCHA GUMBALL MACHINE</h3>
+                        <span class="toys-img-popup">LEARN MORE</span>
+                        <h3 class="toy-title">GATCHA GATCHA GUMBALL MACHINE</h3>
                         <span class="price-toy">$56.00 USD</span>
                     </a>
                 </li>
                 <li class="toys-item-block">
-                    <a href="#">
+                    <a class="toys-item-link" href="#">
                         <img src="images/toys/scented-candle.png" alt="" height="385" width="380">
-                        <h3>CHRISTMAS ADVENT SCENTED CANDLE</h3>
+                        <span class="toys-img-popup">LEARN MORE</span>
+                        <h3 class="toy-title">CHRISTMAS ADVENT SCENTED CANDLE</h3>
                         <span class="price-toy">$29.00 USD</span>
                     </a>
                 </li>
-                <li>
-                    <a href="#">
+                <li class="toys-item-block">
+                    <a class="toys-item-link" href="#">
                         <img src="images/toys/tea-light.png" alt="" height="385" width="380">
-                        <h3>TANGLE SPINNING TEA LIGHT</h3>
+                        <span class="toys-img-popup">LEARN MORE</span>
+                        <h3 class="toy-title">TANGLE SPINNING TEA LIGHT</h3>
                         <span class="price-toy">$56.00 USD</span>
                     </a>
                 </li>
@@ -248,6 +254,7 @@
         </div>
     </footer>
     <script src="js/star-rating.min.js"></script>
+    <script src="js/range.min.js"></script>
 </body>
 
 </html>

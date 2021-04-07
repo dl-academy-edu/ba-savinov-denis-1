@@ -2,13 +2,12 @@
 
 .filter-block {
     background: rgba(125, 151, 218, 0.2);
-    padding: 42px 0;
+    padding: 41px 0 24px;
 }
 
 .filter-block .container {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
 }
 
 .filter-block h3 {
@@ -34,11 +33,14 @@
 .cost-values {
     display: flex;
     justify-content: space-between;
+    margin-top: 11px;
 }
 
 .cost-range {
     -webkit-appearance: none;
     width: 188px;
+    margin-left: 5px;
+    margin-top: 25px;
 }
 
 .cost-range::-webkit-slider-runnable-track {
@@ -46,14 +48,16 @@
     height: 4px;
     cursor: pointer;
     border-radius: 1px;
-    background: #72757C;
+    background: linear-gradient(to right, #C29974 calc(var(--value)*1%), #72757C 0);
 }
 
 .cost-range::-webkit-slider-thumb {
     -webkit-appearance: none;
-    background: url(/images/toys/range-circle.svg) no-repeat;
     height: 24px;
     width: 24px;
+    border: 8px solid #C29974;
+    border-radius: 50%;
+    background-color: #fff;
     cursor: pointer;
     margin-top: -10px;
 }
@@ -73,9 +77,11 @@
 
 .cost-range::-moz-range-thumb {
     -moz-appearance: none;
-    background: url(/images/toys/range-circle.svg) no-repeat;
     height: 24px;
     width: 24px;
+    border: 8px solid #C29974;
+    border-radius: 50%;
+    background-color: #fff;
     cursor: pointer;
     margin-top: -10px;
 }
@@ -105,15 +111,26 @@
 
 .cost-range::-ms-thumb {
     -ms-appearance: none;
-    background: url(/images/toys/range-circle.svg) no-repeat;
+    box-sizing: border-box;
     height: 24px;
     width: 24px;
+    border: 8px solid #C29974;
+    border-radius: 50%;
+    background-color: #fff;
     cursor: pointer;
-    margin-top: -5px;
+    margin-top: 0px;
 }
 
 
 /* filter-color */
+
+.filter-color {
+    margin-left: 94px;
+}
+
+.filter-color-list li {
+    margin-top: 15px;
+}
 
 .filter-color input[type=checkbox] {
     display: none;
@@ -121,14 +138,14 @@
 
 .filter-color label {
     position: relative;
-    margin-left: 33px;
+    margin-left: 30px;
     cursor: pointer;
 }
 
 .filter-color label::before {
     content: '';
     position: absolute;
-    left: -33px;
+    left: -30px;
     top: 0;
     width: 19px;
     height: 19px;
@@ -140,7 +157,7 @@
 .filter-color label::after {
     content: '';
     position: absolute;
-    left: -30px;
+    left: -27px;
     top: 0;
     width: 15px;
     height: 15px;
@@ -161,6 +178,18 @@
 
 /* filter-delivery */
 
+.filter-delivery {
+    margin-left: 123px;
+}
+
+.filter-delivery-list {
+    margin-left: 31px;
+}
+
+.filter-delivery-list li {
+    margin-top: 9px;
+}
+
 .filter-delivery input[type=radio] {
     display: none;
 }
@@ -173,7 +202,7 @@
 .filter-delivery label::before {
     content: '';
     position: absolute;
-    left: -33px;
+    left: -30px;
     top: 0;
     width: 20px;
     height: 20px;
@@ -185,7 +214,7 @@
 .filter-delivery label::after {
     content: '';
     position: absolute;
-    left: -29px;
+    left: -26px;
     top: 4px;
     width: 12px;
     height: 12px;
@@ -204,6 +233,10 @@
 
 
 /* filter-amount */
+
+.filter-amount {
+    margin-left: 69px;
+}
 
 .filter-amount input[type=radio] {
     display: none;
@@ -235,13 +268,14 @@
     display: block;
     max-width: 95px;
     width: 100%;
+    margin: 37px 0 0 60px;
 }
 
 
 /* toys-list */
 
 .toys-list {
-    padding: 60px 0 50px;
+    padding-bottom: 44px;
 }
 
 .toys-list-block {
@@ -254,10 +288,60 @@
 
 .toys-item-block {
     max-width: 380px;
-    margin-bottom: 20px;
+    margin-top: 46px;
     text-align: center;
 }
 
 .toys-item-block:not(:nth-child(3n)) {
     margin-right: 20px;
+}
+
+.toys-item-link {
+    position: relative;
+    display: block;
+}
+
+.toys-img-popup {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(43%, 43%);
+    box-sizing: border-box;
+    padding-top: 84px;
+    max-width: 207px;
+    width: 100%;
+    max-height: 207px;
+    height: 100%;
+    background: #E5EAF8;
+    opacity: 0.9;
+    font-family: var(--font-montserrat);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+.toys-item-link img:hover+.toys-img-popup,
+.toys-img-popup:hover {
+    display: block;
+}
+
+.toys-item-link img:active+.toys-img-popup,
+.toys-img-popup:active {
+    display: block;
+    opacity: 0.67;
+}
+
+.toy-title {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 24px 0 0;
+}
+
+.price-toy {
+    display: block;
+    font-weight: bold;
+    margin-top: 16px;
 }
