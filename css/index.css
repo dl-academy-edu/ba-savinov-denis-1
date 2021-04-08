@@ -25,7 +25,7 @@
 }
 
 .slider-counter {
-    font-family: 'Montserrat', Verdana, sans-serif;
+    font-family: var(--font-montserrat);
     font-style: normal;
     font-weight: 300;
     font-size: 60px;
@@ -61,7 +61,7 @@
 }
 
 .slider-text p {
-    font-family: 'Crimson Text', 'Times New Roman', serif;
+    font-family: var(--font-crimsontext);
     font-style: italic;
     font-weight: normal;
     font-size: 20px;
@@ -123,7 +123,7 @@
 }
 
 .category-title {
-    font-family: 'Montserrat', Verdana, sans-serif;
+    font-family: var(--font-montserrat);
     font-style: normal;
     font-weight: bold;
     font-size: 38px;
@@ -149,7 +149,7 @@
 
 .category-item h3 {
     margin: auto;
-    font-family: 'Montserrat', Verdana, sans-serif;
+    font-family: var(--font-montserrat);
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
@@ -286,7 +286,7 @@
     margin: 0 0 29px 0;
     padding: 0;
     list-style-type: none;
-    font-family: 'Crimson Text', 'Times New Roman', serif;
+    font-family: var(--font-crimsontext);
     font-style: italic;
     font-weight: normal;
     font-size: 26px;
@@ -362,7 +362,7 @@
 
 .dlk-about h3 {
     margin: 11px 0 0 0;
-    font-family: 'Crimson Text', 'Times New Roman', serif;
+    font-family: var(--font-crimsontext);
     font-style: italic;
     font-weight: normal;
     font-size: 26px;

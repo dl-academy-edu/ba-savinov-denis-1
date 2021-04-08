@@ -7,30 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7ae5092e20.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/catalog.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="css/catalog.min.css">
     <title>Catalog</title>
 </head>
 
 <body>
     <header class="header container">
-        <a href="/"><img src="images/DLK-logo.svg" alt="logo" class="header-logo"></a>
+        <a aria-label="Main logo" href="/"><img src="images/DLK-logo.svg" alt="logo" class="header-logo" width="100" height="52"></a>
         <nav class="main-menu" aria-label="Main menu">
-            <ul>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="#">Catalog</a></li>
-                <li><a href="#">About Us</a></li>
+            <ul class="header-list">
+                <li class="header-item"><a href="blog.html">Blog</a></li>
+                <li class="header-item"><a href="catalog.html">Catalog</a></li>
+                <li class="header-item"><a href="#">About Us</a></li>
             </ul>
         </nav>
-        <form class="search">
-            <input type="text" placeholder="Search here...">
-            <button type="button" class="search-btn"></button>
+        <form class="search-form" action="#" method="post">
+            <input class="search-text" type="search" placeholder="Search here...">
+            <img class="search-img" src="images/search.svg" alt="" width="24" height="24">
         </form>
-        <a href="contact.html" class="contact-link">Contact Us</a>
+        <a class="contact-link" href="contact.html">Contact Us</a>
     </header>
     <main class="container">
-        <h1>Category Products</h1>
+        <h1 class="page-title">Category Products</h1>
         <section class="breadcrumbs">
             <h2 class="visually-hidden">Breadcrumbs</h2>
             <ul class="breadcrumbs-list">
@@ -38,37 +39,43 @@
                 <li class="breadcrumbs-item-active">Catalog</li>
             </ul>
         </section>
-        <section class="category">
+        <section class="category category-wrapper">
             <h2 class="visually-hidden">Category Products</h2>
-            <ul>
-                <li>
-                    <a href="#"></a>
-                    <h3>APPAREL KIDS</h3>
+            <ul class="category-list">
+                <li class="category-item">
+                    <a class="category-link category-one" href="#">
+                        <h3>APPAREL KIDS</h3>
+                    </a>
                 </li>
-                <li>
-                    <a href="#"></a>
-                    <h3>HOLIDAY SHOP</h3>
+                <li class="category-item">
+                    <a class="category-link category-two" href="#">
+                        <h3>HOLIDAY SHOP</h3>
+                    </a>
                 </li>
-                <li>
-                    <a href="#"></a>
-                    <h3>TOYS</h3>
+                <li class="category-item">
+                    <a class="category-link category-three " href="toys.html">
+                        <h3>TOYS</h3>
+                    </a>
                 </li>
-                <li>
-                    <a href="#"></a>
-                    <h3>ACCESSORIES</h3>
+                <li class="category-item-right">
+                    <a class="category-link category-four " href="# ">
+                        <h3>ACCESSORIES</h3>
+                    </a>
                 </li>
-                <li>
-                    <a href="#"></a>
-                    <h3>SALE</h3>
+                <li class="category-item-right">
+                    <a class="category-link category-five " href="# ">
+                        <h3>SALE</h3>
+                    </a>
                 </li>
-                <li>
-                    <a href="#"></a>
-                    <h3>APPAREL ADULTS</h3>
+                <li class="category-item-right">
+                    <a class="category-link category-six " href="# ">
+                        <h3>APPAREL ADULTS</h3>
+                    </a>
                 </li>
             </ul>
         </section>
         <section class="description">
-            <h2>Product Description</h2>
+            <h2 class="description-title">Product Description</h2>
             <p>Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
             <p>A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
             <p>The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
@@ -76,67 +83,73 @@
     </main>
     <footer>
         <div class="container">
-            <div class="foother-lists">
+            <div class="footer-top-content footer-lists">
                 <div class="navigation-list">
-                    <h4>Navigation</h4>
-                    <ul class="navigation-menu">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Design Services</a></li>
-                        <li><a href="#">Featured On</a></li>
-                        <li><a href="#">2018 Holiday Catalog</a></li>
-                        <li><a href="#">Shop By Designer</a></li>
+                    <h4 class="footer-titles">Navigation</h4>
+                    <ul class="footer-navigation-menu">
+                        <li class="footer-menu-item"><a href="#">About Us</a></li>
+                        <li class="footer-menu-item"><a href="blog.html">Blog</a></li>
+                        <li class="footer-menu-item"><a href="#">Design Services</a></li>
+                        <li class="footer-menu-item"><a href="#">Featured On</a></li>
+                        <li class="footer-menu-item"><a href="#">2018 Holiday Catalog</a></li>
+                        <li class="footer-menu-item"><a href="#">Shop By Designer</a></li>
                     </ul>
                 </div>
-                <div class="customer-info">
-                    <h4>Customer Information</h4>
-                    <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Sale Exclusions</a></li>
-                        <li><a href="#">Shipping & Returns</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Search</a></li>
+                <div class="footer-customer-info">
+                    <h4 class="footer-titles">Customer Information</h4>
+                    <ul class="footer-customer-menu">
+                        <li class="footer-menu-item"><a href="contact.html">Contact Us</a></li>
+                        <li class="footer-menu-item"><a href="#">Sale Exclusions</a></li>
+                        <li class="footer-menu-item"><a href="#">Shipping & Returns</a></li>
+                        <li class="footer-menu-item"><a href="#">Terms & Conditions</a></li>
+                        <li class="footer-menu-item"><a href="#">Privacy Policy</a></li>
+                        <li class="footer-menu-item"><a href="#">Search</a></li>
                     </ul>
                 </div>
                 <div class="connect">
-                    <h4>Connect</h4>
+                    <h4 class="footer-titles">Connect</h4>
                     <form class="subscribe-form">
-                        <input class="input-email" type="email" name="email" placeholder="Email">
-                        <button class="submit-btn button" type="submit"></button>
+                        <input class="input-email" type="email" name="email" placeholder="Email" aria-label="subscribe email">
+                        <button class="subscribe-btn button" type="submit">Join</button>
                     </form>
                     <div class="socials">
-                        <ul>
+                        <ul class="socials-list">
                             <li>
-                                <a class="facebook fab fa-facebook-f" href="#"></a>
+                                <a class="socials-link facebook fab fa-facebook-f" aria-label="social facebook link" href="#" target="_blank" tabindex="0"></a>
                             </li>
                             <li>
-                                <a class="twitter fab fa-twitter" href="#"></a>
+                                <a class="socials-link twitter fab fa-twitter" aria-label="social twitter link" href="#" target="_blank" tabindex="0"></a>
                             </li>
                             <li>
-                                <a class="pinterest fab fa-pinterest" href="#"></a>
+                                <a class="socials-link pinterest fab fa-pinterest" aria-label="social pinterest link" href="#" target="_blank" tabindex="0"></a>
                             </li>
                             <li>
-                                <a class="instagram fab fa-instagram" href="#"></a>
+                                <a class="socials-link instagram fab fa-instagram" aria-label="social instagram link" href="#" target="_blank" tabindex="0"></a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="foother-lists">
-                <div class="company-rating">
-                    <div class="rating-label">Company Rating</div>
-                    <div class="rating__item far fa-star">1</div>
-                    <div class="rating__item far fa-star">2</div>
-                    <div class="rating__item far fa-star">3</div>
-                    <div class="rating__item far fa-star">4</div>
-                    <div class="rating__item far fa-star">5</div>
+            <div class="footer-bottom-content footer-lists">
+                <div class="rating-list">
+                    <input class="star-rating-input" type="radio" id="star-rating-5" name="star" value="5">
+                    <label class="rating-item fas fa-star hov_star" for="star-rating-5" tabindex="0" aria-label="Company Rating 5 star"></label>
+                    <input class="star-rating-input" type="radio" id="star-rating-4" name="star" value="4">
+                    <label class="rating-item fas fa-star hov_star" for="star-rating-4" tabindex="0" aria-label="Company Rating 4 star"></label>
+                    <input class="star-rating-input" type="radio" id="star-rating-3" name="star" value="3">
+                    <label class="rating-item fas fa-star hov_star" for="star-rating-3" tabindex="0" aria-label="Company Rating 3 star"></label>
+                    <input class="star-rating-input" type="radio" id="star-rating-2" name="star" value="2">
+                    <label class="rating-item fas fa-star hov_star" for="star-rating-2" tabindex="0" aria-label="Company Rating 2 star"></label>
+                    <input class="star-rating-input" type="radio" id="star-rating-1" name="star" value="1">
+                    <label class="rating-item fas fa-star hov_star" for="star-rating-1" tabindex="0" aria-label="Company Rating 1 star"></label>
+                    <span class="rating-label">Company Rating</span>
                 </div>
-                <div class="copyright">Copyright © 2018 Dlk • Design Life Kids</div>
-                <div class="designer-info">Web Design — Direct Line Development</div>
+                <span class="copyright">Copyright © 2018 Dlk • Design Life Kids</span>
+                <a class="designer-link" href="#">Web Design — Direct Line Development</a>
             </div>
         </div>
     </footer>
+    <script src="js/star-rating.min.js"></script>
 </body>
 
 </html>
