@@ -61,6 +61,14 @@ button:disabled {
     color: #E1E1E1;
 }
 
+input[type=checkbox]:disabled+label:after {
+    background-image: url(/images/stroke-disable.svg);
+}
+
+input[type=checkbox]:disabled+label::before {
+    border: 2px solid #E1CDBA;
+}
+
 
 /* HEADER */
 
@@ -482,14 +490,6 @@ footer {
 
 .contact-agreement input[type=checkbox]:focus+label::before {
     outline: #000 auto 1px;
-}
-
-.contact-agreement input[type=checkbox]:disabled+label:after {
-    background-image: url(/images/stroke.svg);
-}
-
-.contact-agreement input[type=checkbox]:disabled+label::before {
-    border: 2px solid #E1CDBA;
 }
 
 .modal-window-btn {

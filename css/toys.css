@@ -245,6 +245,14 @@
     outline: #000 auto 1px;
 }
 
+.filter-delivery input[type=radio]:disabled+label:after {
+    background: #E1CDBA;
+}
+
+.filter-delivery input[type=radio]:disabled+label::before {
+    border: 2px solid #E1CDBA;
+}
+
 .filter-delivery label:hover {
     text-decoration-line: underline;
 }

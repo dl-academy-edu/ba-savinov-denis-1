@@ -17,7 +17,7 @@
 
 <body>
     <header class="header container">
-        <a href="#"><img src="images/DLK-logo.svg" alt="logo" class="header-logo" width="100" height="52"></a>
+        <a aria-label="Main logo" href="#"><img class="header-logo" src="images/DLK-logo.svg" alt="logo" width="100" height="52"></a>
         <nav class="main-menu" aria-label="Main menu">
             <ul class="header-list">
                 <li class="header-item"><a href="blog.html">Blog</a></li>
@@ -111,16 +111,16 @@
                 </ul>
                 <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
                 <p>What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
-                <a href="#" class="delivery-learn-btn button">LEARN MORE</a>
+                <a class="delivery-learn-btn button" href="#">LEARN MORE</a>
             </div>
         </section>
         <section class="company">
             <h2 class="visually-hidden">Company</h2>
             <ul class="company-list">
-                <li class="company-one"><img src="images/company/mail-group.png" alt="" width="193" height="60"></li>
-                <li class="company-two"><img src="images/company/apple.png" alt="" width="179" height="61"></li>
-                <li class="company-three"><img src="images/company/eltex.png" alt="" width="216" height="46"></li>
-                <li class="company-four"><img src="images/company/owox.png" alt="" width="211" height="40"></li>
+                <li><img src="images/company/mail-group.png" alt="" width="193" height="60"></li>
+                <li><img src="images/company/apple.png" alt="" width="179" height="61"></li>
+                <li><img src="images/company/eltex.png" alt="" width="216" height="46"></li>
+                <li><img src="images/company/owox.png" alt="" width="211" height="40"></li>
             </ul>
         </section>
         <section class="dlk-info">
@@ -138,7 +138,7 @@
                 <div class="dlk-info-wrapper">
                     <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
                 </div>
-                <iframe title="Map of where we are" class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2651.820908703631!2d-122.420958355798!3d37.77681338703293!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809969fa0579%3A0xa828d2bfd4ce59fb!2s240%20Van%20Ness%20Ave%2C%20San%20Francisco%2C%20CA%2094102%2C%20USA!5e0!3m2!1sen!2sru!4v1617131216820!5m2!1sen!2sru"
+                <iframe class="map" title="Map of where we are" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2651.820908703631!2d-122.420958355798!3d37.77681338703293!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809969fa0579%3A0xa828d2bfd4ce59fb!2s240%20Van%20Ness%20Ave%2C%20San%20Francisco%2C%20CA%2094102%2C%20USA!5e0!3m2!1sen!2sru!4v1617131216820!5m2!1sen!2sru"
                     allowfullscreen="" loading="lazy"></iframe>
             </article>
         </section>
@@ -171,22 +171,22 @@
                 <div class="connect">
                     <h4 class="footer-titles">Connect</h4>
                     <form class="subscribe-form">
-                        <input class="input-email" type="email" name="email" placeholder="Email">
+                        <input class="input-email" type="email" name="email" placeholder="Email" aria-label="subscribe email">
                         <button class="subscribe-btn button" type="submit">Join</button>
                     </form>
                     <div class="socials">
                         <ul class="socials-list">
                             <li>
-                                <a class="socials-link facebook fab fa-facebook-f" aria-label="social facebook link" href="#" target="_blank"></a>
+                                <a class="socials-link facebook fab fa-facebook-f" aria-label="social facebook link" href="#" target="_blank" tabindex="0"></a>
                             </li>
                             <li>
-                                <a class="socials-link twitter fab fa-twitter" aria-label="social twitter link" href="#" target="_blank"></a>
+                                <a class="socials-link twitter fab fa-twitter" aria-label="social twitter link" href="#" target="_blank" tabindex="0"></a>
                             </li>
                             <li>
-                                <a class="socials-link pinterest fab fa-pinterest" aria-label="social pinterest link" href="#" target="_blank"></a>
+                                <a class="socials-link pinterest fab fa-pinterest" aria-label="social pinterest link" href="#" target="_blank" tabindex="0"></a>
                             </li>
                             <li>
-                                <a class="socials-link instagram fab fa-instagram" aria-label="social instagram link" href="#" target="_blank"></a>
+                                <a class="socials-link instagram fab fa-instagram" aria-label="social instagram link" href="#" target="_blank" tabindex="0"></a>
                             </li>
                         </ul>
                     </div>
@@ -215,7 +215,7 @@
     <div class="modal-overlay"></div>
     <div class="modal-window">
         <h2 class="visually-hidden">Modal Window</h2>
-        <form action="#" class="contact-form" method="POST">
+        <form class="contact-form" action="#" method="POST">
             <fieldset class="contact-wrapper">
                 <label class="contact-name" for="contact-name">Name</label>
                 <input type="text" id="contact-name" name="name">
